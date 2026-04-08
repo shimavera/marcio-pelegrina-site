@@ -53,16 +53,16 @@ serve(async (req) => {
     // Call Lovable AI to analyze gaps - ENGLISH VERSION for dental tourism
     const systemPrompt = `You are a dental content marketing expert and content gap analyst specialized in dental tourism for international patients.
 
-Analyze the existing blog content from **Dr. Luan Maciel's** dental clinic in São Paulo, Brazil and identify frequently asked questions that international patients (especially from the US, Europe, and other countries) ask but are NOT adequately covered.
+Analyze the existing blog content from **Dr. Márcio Pelegrina's** dental clinic in São Paulo, Brazil and identify frequently asked questions that international patients (especially from the US, Europe, and other countries) ask but are NOT adequately covered.
 
-## About Dr. Luan Maciel
+## About Dr. Márcio Pelegrina
 - Dental Surgeon specialized in Cosmetic Dentistry and Endodontics
-- CROSP License: 158810
+- CROSP License: [CROSP]
 - Over 2,000 patients treated
-- Location: Jardim Anália Franco, São Paulo - SP, Brazil
+- Location: [BAIRRO], São Paulo - SP, Brazil
 - WhatsApp: +55 11 91185-2982
 
-## Dr. Luan Maciel's Specialties:
+## Dr. Márcio Pelegrina's Specialties:
 1. **Porcelain Dental Veneers (Lentes de Contato)** - Ultra-thin laminates for smile transformation
 2. **Composite Resin Veneers** - More affordable alternative with excellent results
 3. **Dental Facets** - Aesthetic restorations for shape and color correction
@@ -77,7 +77,7 @@ Focus on DENTAL TOURISM aspects for COSMETIC DENTISTRY and identify content gaps
 - Why São Paulo is a top destination for dental veneers
 - Travel planning for smile makeover procedures
 - Recovery time and when to fly back home
-- English-speaking dental care with Dr. Luan Maciel
+- English-speaking dental care with Dr. Márcio Pelegrina
 - Payment options for international patients (USD, EUR accepted)
 - Before and after transformations
 - International patient testimonials
@@ -85,12 +85,12 @@ Focus on DENTAL TOURISM aspects for COSMETIC DENTISTRY and identify content gaps
 - Combining multiple cosmetic procedures in one trip
 - Post-operative care for patients returning abroad
 - Virtual consultations and digital smile preview
-- Accommodation near Jardim Anália Franco clinic
+- Accommodation near [BAIRRO] clinic
 
 For each gap identified, provide:
 1. The specific unanswered question
 2. Why this is important for international patients seeking cosmetic dentistry
-3. Suggested post title (include "Dr. Luan Maciel" or "São Paulo" when appropriate)
+3. Suggested post title (include "Dr. Márcio Pelegrina" or "São Paulo" when appropriate)
 4. Priority (high/medium/low)
 5. Suggested category (use treatment name when applicable)
 
@@ -103,7 +103,7 @@ Return ONLY a valid JSON array with objects in the format:
   "category": "string"
 }
 
-IMPORTANT: Identify EXACTLY 3 MOST RELEVANT and high-priority content gaps focused on dental tourism for cosmetic dentistry treatments with Dr. Luan Maciel.`;
+IMPORTANT: Identify EXACTLY 3 MOST RELEVANT and high-priority content gaps focused on dental tourism for cosmetic dentistry treatments with Dr. Márcio Pelegrina.`;
 
     const userPrompt = `Current blog content:
 

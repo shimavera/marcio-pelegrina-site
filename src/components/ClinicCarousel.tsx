@@ -32,7 +32,7 @@ const galleryImages = [
   },
   {
     src: clinica1,
-    alt: "Porta de entrada do consultório Dr. Luan Maciel",
+    alt: "Porta de entrada do consultório",
     title: "Entrada do Consultório",
     size: "small",
   },
@@ -64,9 +64,7 @@ const ClinicCarousel = () => {
         </div>
 
         <div className="max-w-6xl mx-auto">
-          {/* Grid Layout */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
-            {/* Top Row - 2 Large Images */}
             {largeImages.map((image, index) => (
               <div
                 key={`large-${index}`}
@@ -86,7 +84,6 @@ const ClinicCarousel = () => {
               </div>
             ))}
 
-            {/* Bottom Row - 4 Small Images */}
             {smallImages.map((image, index) => (
               <div
                 key={`small-${index}`}

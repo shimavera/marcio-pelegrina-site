@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button";
-import { MessageCircle, MapPin, Phone, ShieldCheck } from "lucide-react";
+import { MessageCircle, MapPin, ShieldCheck } from "lucide-react";
 import { trackWorkingLead } from "@/lib/utils";
 
 const Contact = () => {
-  const whatsappUrl = "https://api.whatsapp.com/send/?phone=5511983385832&text=Ol%C3%A1%21+Acabei+de+visitar+seu+site.+Pode+me+passar+mais+informa%C3%A7%C3%B5es%3F&type=phone_number&app_absent=0";
+  const whatsappUrl = "#";
   
   const handleWhatsAppClick = () => {
     trackWorkingLead();
@@ -27,25 +27,19 @@ const Contact = () => {
           </div>
 
           <p className="text-muted-foreground font-inter text-lg leading-relaxed max-w-3xl mx-auto">
-            Entre em contato e agende sua consulta com o Dr. Luan Maciel
+            Entre em contato e agende sua consulta com o Dr. Márcio Pelegrina
           </p>
         </div>
 
         {/* Grid with Map and Contact Info */}
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-start">
-          {/* Google Maps */}
+          {/* Google Maps Placeholder */}
           <div className="animate-fade-in">
-            <div className="relative w-full h-[350px] md:h-[450px] lg:h-[500px] rounded-2xl overflow-hidden shadow-gold border border-border/30">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.3644777353416!2d-46.56061866438073!3d-23.555349752288475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5ff3d82ea343%3A0x36c1bdd8c8edfa62!2sCl%C3%ADnica%20Dr.%20Luan%20Maciel%20-%20Odontologia%20e%20Est%C3%A9tica!5e0!3m2!1sen!2sbr!4v1767620441525!5m2!1sen!2sbr" 
-                width="100%" 
-                height="100%" 
-                style={{ border: 0 }}
-                allowFullScreen 
-                loading="lazy" 
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Localização Dr. Luan Maciel - R. Emília Marengo, 1040 - Jardim Anália Franco"
-              />
+            <div className="relative w-full h-[350px] md:h-[450px] lg:h-[500px] rounded-2xl overflow-hidden shadow-gold border border-border/30 bg-muted/30 flex items-center justify-center">
+              <div className="text-center space-y-2">
+                <MapPin className="w-12 h-12 text-muted-foreground/40 mx-auto" />
+                <p className="text-sm text-muted-foreground/60 font-inter">[MAPA - INSERIR ENDEREÇO]</p>
+              </div>
             </div>
           </div>
 
@@ -59,8 +53,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-inter text-sm text-accent mb-1">Endereço</p>
-                  <p className="font-semibold text-foreground text-lg">R. Emília Marengo, 1040</p>
-                  <p className="font-semibold text-foreground text-base">Jardim Anália Franco (Tatuapé) – São Paulo/SP, 03336-000</p>
+                  <p className="font-semibold text-foreground text-lg">[ENDEREÇO]</p>
+                  <p className="font-semibold text-foreground text-base">[CIDADE] – [ESTADO], [CEP]</p>
                   <p className="text-muted-foreground text-sm mt-1">Segunda a Sexta, das 9h às 18h</p>
                 </div>
               </div>
@@ -71,7 +65,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-inter text-sm text-accent mb-1">WhatsApp</p>
-                  <p className="font-semibold text-foreground text-lg">(11) 98338-5832</p>
+                  <p className="font-semibold text-foreground text-lg">[TELEFONE]</p>
                 </div>
               </div>
             </div>

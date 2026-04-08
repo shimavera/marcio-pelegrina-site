@@ -15,22 +15,19 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 py-12 md:py-16">
           {/* Brand Section */}
           <div className="flex flex-col gap-4 items-start">
-            <img 
-              src={new URL('../assets/dr-luan-maciel-logo-new.webp', import.meta.url).href}
-              alt="Dr. Luan Maciel - Odontologia Avançada" 
-              className="h-12 w-auto object-contain"
-              style={{ maxWidth: '200px' }}
-            />
+            <span className="font-kiona text-xl font-bold text-foreground">
+              Dr. Márcio Pelegrina
+            </span>
             <p className="text-muted-foreground font-inter text-sm leading-relaxed max-w-xs">
               Odontologia Avançada com foco em Estética Dental e Endodontia. 
               Especialista em lentes dentais e reabilitação do sorriso.
             </p>
             <div className="text-muted-foreground/70 font-inter text-xs space-y-1">
-              <p className="font-semibold text-foreground">R. Emília Marengo, 1040</p>
-              <p>Jardim Anália Franco (Tatuapé) – São Paulo/SP, 03336-000</p>
+              <p className="font-semibold text-foreground">[ENDEREÇO]</p>
+              <p>[CIDADE] – [ESTADO], [CEP]</p>
               <p className="mt-2 flex items-center gap-1.5">
                 <MessageCircle className="w-3.5 h-3.5 text-foreground" />
-                <span className="font-semibold text-foreground">WhatsApp:</span> (11) 98338-5832
+                <span className="font-semibold text-foreground">WhatsApp:</span> [TELEFONE]
               </p>
               <p className="mt-2 text-accent font-semibold">Segunda a Sexta, das 9h às 18h</p>
             </div>
@@ -108,9 +105,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a 
-                    href="https://api.whatsapp.com/send/?phone=5511983385832&text=Ol%C3%A1%21+Acabei+de+visitar+seu+site.+Pode+me+passar+mais+informa%C3%A7%C3%B5es%3F&type=phone_number&app_absent=0" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
+                    href="#" 
                     onClick={trackWorkingLead} 
                     className="text-muted-foreground hover:text-foreground transition-colors duration-300 text-sm font-inter"
                   >
@@ -136,9 +131,7 @@ const Footer = () => {
               <h3 className="text-foreground font-semibold text-sm font-inter">Redes Sociais</h3>
               <div className="flex items-center gap-3">
                 <a 
-                  href="https://api.whatsapp.com/send/?phone=5511983385832&text=Ol%C3%A1%21+Acabei+de+visitar+seu+site.+Pode+me+passar+mais+informa%C3%A7%C3%B5es%3F&type=phone_number&app_absent=0" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                  href="#" 
                   onClick={trackWorkingLead}
                   aria-label="WhatsApp" 
                   className="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 hover:bg-primary/20 text-primary transition-all duration-300"
@@ -148,24 +141,11 @@ const Footer = () => {
                   </svg>
                 </a>
                 <a 
-                  href="https://www.instagram.com/drluanmaciel" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  aria-label="Instagram" 
+                  href="#" 
+                  aria-label="Instagram - [INSTAGRAM]" 
                   className="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 hover:bg-primary/20 text-primary transition-all duration-300"
                 >
                   <Instagram className="w-5 h-5" />
-                </a>
-                <a 
-                  href="https://www.tiktok.com/@drluanmaciel?lang=en" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  aria-label="TikTok" 
-                  className="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 hover:bg-primary/20 text-primary transition-all duration-300"
-                >
-                  <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
-                  </svg>
                 </a>
               </div>
             </div>
@@ -176,8 +156,8 @@ const Footer = () => {
         <div className="border-t border-border/30 py-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 items-center gap-4">
             <div className="text-muted-foreground font-inter text-xs text-center lg:text-left">
-              <p className="font-semibold text-foreground">Dr. Luan Maciel - Odontologia Avançada</p>
-              <p className="mt-1">CROSP: 158810</p>
+              <p className="font-semibold text-foreground">Dr. Márcio Pelegrina - Odontologia Avançada</p>
+              <p className="mt-1">CRO: [CROSP]</p>
             </div>
             
             {/* SP3 Logo - Centered */}
@@ -198,7 +178,7 @@ const Footer = () => {
             </div>
             
             <p className="text-muted-foreground font-inter text-xs text-center lg:text-right">
-              © {currentYear} Dr. Luan Maciel. Todos os direitos reservados.
+              © {currentYear} Dr. Márcio Pelegrina. Todos os direitos reservados.
             </p>
           </div>
         </div>

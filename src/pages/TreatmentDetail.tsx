@@ -8,7 +8,7 @@ import { Separator } from "@/components/ui/separator";
 import { ArrowLeft, Phone, MessageCircle, CheckCircle2, Clock, Users, TrendingUp, Star, Info, AlertCircle, Award, ShieldCheck } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import drLuanMaciel from "@/assets/dr-luan-hero.webp";
+import { User } from "lucide-react";
 import { trackWorkingLead } from "@/lib/utils";
 
 interface Treatment {
@@ -22,7 +22,7 @@ interface Treatment {
 
 const TreatmentDetail = () => {
   const { slug } = useParams<{ slug: string }>();
-  const whatsappUrl = "https://api.whatsapp.com/send/?phone=5511983385832&text=Ol%C3%A1%21+Acabei+de+visitar+seu+site.+Pode+me+passar+mais+informa%C3%A7%C3%B5es%3F&type=phone_number&app_absent=0";
+  const whatsappUrl = "#";
   
   const handleWhatsAppClick = () => {
     trackWorkingLead();
@@ -135,7 +135,7 @@ const TreatmentDetail = () => {
                       className="w-full border-primary text-primary hover:bg-primary/5"
                       asChild
                     >
-                      <a href="tel:+5511983385832">
+                      <a href="tel:[TELEFONE]">
                         <Phone className="w-4 h-4 mr-2" />
                         Ligar
                       </a>
@@ -226,26 +226,25 @@ const TreatmentDetail = () => {
                           <Award className="w-5 h-5 text-primary" />
                         </div>
                         <h2 className="font-kiona text-xl md:text-2xl font-bold text-foreground">
-                          Sobre o Dr. Luan Maciel
+                          Sobre o Dr. Márcio Pelegrina
                         </h2>
                       </div>
                       <Separator className="mb-4" />
                       
-                      <div className="grid md:grid-cols-[200px,1fr] gap-6">
-                        <div className="relative rounded-lg overflow-hidden shadow-[var(--shadow-elevated)] h-[200px] md:h-auto">
-                          <img 
-                            src={drLuanMaciel} 
-                            alt="Dr. Luan Maciel" 
-                            className="w-full h-full object-cover"
-                          />
+                        <div className="grid md:grid-cols-[200px,1fr] gap-6">
+                        <div className="relative rounded-lg overflow-hidden shadow-[var(--shadow-elevated)] h-[200px] md:h-auto bg-muted/30 flex items-center justify-center">
+                          <div className="text-center space-y-2">
+                            <User className="w-12 h-12 text-muted-foreground/40 mx-auto" />
+                            <p className="text-xs text-muted-foreground/60">Foto do Doutor</p>
+                          </div>
                         </div>
                         
                         <div className="space-y-3 text-sm md:text-base text-muted-foreground leading-relaxed">
                           <p>
-                            <strong className="text-foreground">Dr. Luan Maciel</strong> é especialista em Lentes de Porcelana, Endodontia e Estética Dental, com atuação precisa e olhar estético apurado. Dedica-se a transformar sorrisos com naturalidade e sofisticação.
+                            <strong className="text-foreground">Dr. Márcio Pelegrina</strong> é especialista em Lentes de Porcelana, Endodontia e Estética Dental, com atuação precisa e olhar estético apurado. Dedica-se a transformar sorrisos com naturalidade e sofisticação.
                           </p>
                           <p>
-                            Com formação sólida e experiência em procedimentos estéticos de alta complexidade, o Dr. Luan Maciel é reconhecido pela excelência técnica, atendimento humanizado e uso de tecnologias de última geração para proporcionar resultados excepcionais.
+                            Com formação sólida e experiência em procedimentos estéticos de alta complexidade, o Dr. Márcio Pelegrina é reconhecido pela excelência técnica, atendimento humanizado e uso de tecnologias de última geração para proporcionar resultados excepcionais.
                           </p>
                           <div className="flex flex-wrap gap-2 pt-2">
                             <Badge variant="outline" className="text-xs">
@@ -341,7 +340,7 @@ const TreatmentDetail = () => {
                           <Phone className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
                           <div>
                             <div className="font-medium text-foreground">Telefone</div>
-                            <div className="text-muted-foreground">(11) 98338-5832</div>
+                            <div className="text-muted-foreground">[TELEFONE]</div>
                           </div>
                         </div>
                         <Separator />
@@ -349,15 +348,15 @@ const TreatmentDetail = () => {
                           <MessageCircle className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
                           <div>
                             <div className="font-medium text-foreground">WhatsApp</div>
-                            <div className="text-muted-foreground">(11) 98338-5832</div>
+                            <div className="text-muted-foreground">[TELEFONE]</div>
                           </div>
                         </div>
                         <Separator />
                         <div className="text-muted-foreground">
                           <strong className="text-foreground">Endereço:</strong><br />
-                          R. Emília Marengo, 1040<br />
-                          Jardim Anália Franco – São Paulo/SP<br />
-                          CEP: 03336-000
+                          [ENDEREÇO]<br />
+                          [CIDADE] – [ESTADO]<br />
+                          CEP: [CEP]
                         </div>
                       </div>
                     </CardContent>
@@ -424,9 +423,9 @@ const TreatmentDetail = () => {
                         className="border-primary text-primary hover:bg-primary/5 w-full sm:w-auto"
                         asChild
                       >
-                        <a href="tel:+5511983385832">
+                      <a href="tel:[TELEFONE]">
                           <Phone className="w-4 h-4 mr-2" />
-                          (11) 98338-5832
+                          [TELEFONE]
                         </a>
                       </Button>
                     </div>

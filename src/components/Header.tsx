@@ -1,8 +1,7 @@
-import { Menu, X, Users, ShieldCheck } from "lucide-react";
+import { Menu, X, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Link, useLocation } from "react-router-dom";
-import drLuanMacielLogo from "@/assets/dr-luan-maciel-logo-new.webp";
 import { useState } from "react";
 import { trackWorkingLead } from "@/lib/utils";
 
@@ -30,11 +29,9 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo - Left */}
           <Link to="/" className="flex items-center animate-fade-in">
-            <img 
-              src={drLuanMacielLogo} 
-              alt="Dr. Luan Maciel - Odontologia Avançada" 
-              className="h-10 md:h-12 w-auto"
-            />
+            <span className="font-kiona text-lg md:text-xl font-bold text-foreground">
+              Dr. Márcio Pelegrina
+            </span>
           </Link>
 
           {/* Desktop Navigation - Center */}
@@ -55,7 +52,7 @@ const Header = () => {
           {/* CTA Button - Right (Desktop) */}
           <div className="hidden lg:flex flex-col items-center">
             <Button className="hover-lift shadow-gold bg-gradient-gold hover:opacity-90" asChild>
-              <a href="https://api.whatsapp.com/send/?phone=5511983385832&text=Ol%C3%A1%21+Acabei+de+visitar+seu+site.+Pode+me+passar+mais+informa%C3%A7%C3%B5es%3F&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" onClick={handleWhatsAppClick}>
+              <a href="#" target="_blank" rel="noopener noreferrer" onClick={handleWhatsAppClick}>
                 Agendar Consulta
               </a>
             </Button>
@@ -87,7 +84,7 @@ const Header = () => {
                   </Link>
                 ))}
                 <Button className="hover-lift shadow-gold bg-gradient-gold hover:opacity-90 w-full" asChild>
-                  <a href="https://api.whatsapp.com/send/?phone=5511983385832&text=Ol%C3%A1%21+Acabei+de+visitar+seu+site.+Pode+me+passar+mais+informa%C3%A7%C3%B5es%3F&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" onClick={() => { setIsOpen(false); handleWhatsAppClick(); }}>
+                  <a href="#" target="_blank" rel="noopener noreferrer" onClick={() => { setIsOpen(false); handleWhatsAppClick(); }}>
                     Agendar Consulta
                   </a>
                 </Button>

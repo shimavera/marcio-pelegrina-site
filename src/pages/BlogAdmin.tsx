@@ -29,7 +29,7 @@ import {
 import { Calendar } from "@/components/ui/calendar";
 import { format } from "date-fns";
 import { cn } from "@/lib/utils";
-import drLuanMacielLogo from "@/assets/dr-luan-logo-login.webp";
+// Logo removed - using text instead
 import BlogAdminTabs from "@/components/blog/BlogAdminTabs";
 import ContentGapAnalysis from "@/components/blog/ContentGapAnalysis";
 import {
@@ -87,8 +87,8 @@ const BlogAdmin = () => {
     clinic_location_id: null as string | null,
     geo_lat: "-23.577643",
     geo_lng: "-46.677572",
-    cta_text: "Agende sua avaliação com o Dr. Luan Maciel",
-    cta_url: "https://api.whatsapp.com/send/?phone=5511983385832&text=Ol%C3%A1%21+Acabei+de+visitar+seu+site.+Pode+me+passar+mais+informa%C3%A7%C3%B5es%3F&type=phone_number&app_absent=0",
+    cta_text: "Agende sua avaliação com o Dr. Márcio Pelegrina",
+    cta_url: "#",
     read_time: "",
     featured: false,
     internal_notes: "",
@@ -389,8 +389,8 @@ const BlogAdmin = () => {
       clinic_location_id: null,
       geo_lat: "",
       geo_lng: "",
-      cta_text: "Agende sua avaliação com o Dr. Luan Maciel",
-      cta_url: "https://api.whatsapp.com/send/?phone=5511983385832&text=Ol%C3%A1%21+Acabei+de+visitar+seu+site.+Pode+me+passar+mais+informa%C3%A7%C3%B5es%3F&type=phone_number&app_absent=0",
+      cta_text: "Agende sua avaliação com o Dr. Márcio Pelegrina",
+      cta_url: "#",
       read_time: "",
       featured: false,
       internal_notes: "",
@@ -419,8 +419,8 @@ const BlogAdmin = () => {
       clinic_location_id: post.clinic_location_id || null,
       geo_lat: (post as any).geo_lat?.toString() || "",
       geo_lng: (post as any).geo_lng?.toString() || "",
-      cta_text: (post as any).cta_text || "Agende sua avaliação com o Dr. Luan Maciel",
-      cta_url: (post as any).cta_url || "https://api.whatsapp.com/send/?phone=5511983385832&text=Ol%C3%A1%21+Acabei+de+visitar+seu+site.+Pode+me+passar+mais+informa%C3%A7%C3%B5es%3F&type=phone_number&app_absent=0",
+      cta_text: (post as any).cta_text || "Agende sua avaliação com o Dr. Márcio Pelegrina",
+      cta_url: (post as any).cta_url || "#",
       read_time: (post as any).read_time || "",
       featured: post.featured || false,
       internal_notes: (post as any).internal_notes || "",
@@ -756,7 +756,7 @@ const BlogAdmin = () => {
         <header className="fixed top-0 left-0 right-0 z-50 bg-background border-b border-border shadow-sm">
           <div className="container mx-auto px-4 py-3 md:py-4 flex items-center justify-between gap-4">
             <div className="flex items-center gap-3 md:gap-4 min-w-0">
-              <img src={drLuanMacielLogo} alt="Dr. Luan Maciel" className="h-8 md:h-12 flex-shrink-0" />
+              <span className="font-kiona text-lg font-bold text-foreground flex-shrink-0">Dr. Márcio Pelegrina</span>
               <div>
                 <h1 className="font-kiona text-base md:text-xl text-foreground">Painel Administrativo</h1>
                 <p className="text-xs text-muted-foreground hidden sm:block">Gerenciamento de Conteúdo</p>

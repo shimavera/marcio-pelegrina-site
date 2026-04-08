@@ -2,7 +2,7 @@ import whatsappIcon from "@/assets/whatsapp-icon.png";
 import { trackWorkingLead } from "@/lib/utils";
 
 const WhatsAppButton = () => {
-  const whatsappUrl = "https://api.whatsapp.com/send/?phone=5511983385832&text=Ol%C3%A1%21+Acabei+de+visitar+seu+site.+Pode+me+passar+mais+informa%C3%A7%C3%B5es%3F&type=phone_number&app_absent=0";
+  const whatsappUrl = "#";
 
   const handleClick = () => {
     trackWorkingLead();

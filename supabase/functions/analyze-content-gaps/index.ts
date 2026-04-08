@@ -53,14 +53,14 @@ serve(async (req) => {
     // Call Lovable AI to analyze gaps
 const systemPrompt = `Você é um especialista em marketing de conteúdo odontológico e análise de gaps de conteúdo.
 
-Analise o conteúdo existente do blog do **Dr. Luan Maciel** (CROSP 158810), cirurgião-dentista especializado em Estética Dental e Endodontia, e identifique perguntas frequentes que os pacientes fazem mas que NÃO estão cobertas adequadamente.
+Analise o conteúdo existente do blog do **Dr. Márcio Pelegrina** (CRO [CROSP]), cirurgião-dentista especializado em Estética Dental e Endodontia, e identifique perguntas frequentes que os pacientes fazem mas que NÃO estão cobertas adequadamente.
 
-## Sobre o Dr. Luan Maciel
+## Sobre o Dr. Márcio Pelegrina
 - Cirurgião-Dentista especializado em Estética Dental e Endodontia
-- CROSP: 158810
+- CRO: [CROSP]
 - Mais de 2.000 pacientes atendidos
-- Localização: Jardim Anália Franco, São Paulo - SP
-- WhatsApp: (11) 91185-2982
+- Localização: [BAIRRO], São Paulo - SP
+- WhatsApp: [TELEFONE]
 
 ## Especialidades e Tratamentos PRINCIPAIS:
 1. **Lentes de Contato Dental em Porcelana** - Laminados ultrafinos para transformação do sorriso
@@ -72,7 +72,7 @@ Analise o conteúdo existente do blog do **Dr. Luan Maciel** (CROSP 158810), cir
 7. **Reabilitação Estética Completa** - Planejamento digital do sorriso
 8. **Harmonização do Sorriso** - Correção de assimetrias e proporções dentais
 
-FOQUE EXCLUSIVAMENTE nestes tratamentos do Dr. Luan Maciel. Identifique gaps de conteúdo relacionados a:
+FOQUE EXCLUSIVAMENTE nestes tratamentos do Dr. Márcio Pelegrina. Identifique gaps de conteúdo relacionados a:
 - Dúvidas sobre lentes de porcelana vs resina (diferenças, durabilidade, preço)
 - Processo de colocação de lentes de contato dental
 - Tratamento de canal: dói? quanto tempo leva?
@@ -89,7 +89,7 @@ FOQUE EXCLUSIVAMENTE nestes tratamentos do Dr. Luan Maciel. Identifique gaps de 
 Para cada gap identificado, forneça:
 1. A pergunta específica não respondida
 2. Por que isso é importante para os pacientes
-3. Sugestão de título para o post (mencionando Dr. Luan Maciel quando apropriado)
+3. Sugestão de título para o post (mencionando Dr. Márcio Pelegrina quando apropriado)
 4. Prioridade (high/medium/low)
 5. Categoria sugerida (use o nome do tratamento quando aplicável)
 
@@ -102,7 +102,7 @@ Retorne APENAS um array JSON válido com objetos no formato:
   "category": "string"
 }
 
-IMPORTANTE: Identifique EXATAMENTE os 3 gaps de conteúdo MAIS RELEVANTES e prioritários focados nos tratamentos de Estética Dental e Endodontia do Dr. Luan Maciel.`;
+IMPORTANTE: Identifique EXATAMENTE os 3 gaps de conteúdo MAIS RELEVANTES e prioritários focados nos tratamentos de Estética Dental e Endodontia do Dr. Márcio Pelegrina.`;
 
     const userPrompt = `Conteúdo atual do blog:
 

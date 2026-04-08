@@ -14,11 +14,11 @@ const Unidades = () => {
               Consultório
             </p>
             <h1 className="font-kiona text-4xl md:text-5xl lg:text-6xl font-bold text-primary mt-4 mb-4">
-              Dr. Luan Maciel
+              Dr. Márcio Pelegrina
             </h1>
             <p className="text-muted-foreground font-inter text-lg max-w-2xl mx-auto">
               Odontologia Avançada com foco em Estética Dental e Endodontia. 
-              Atendimento personalizado no Jardim Anália Franco, São Paulo.
+              Atendimento personalizado em [CIDADE].
             </p>
           </div>
 
@@ -29,7 +29,7 @@ const Unidades = () => {
               <div className="aspect-[21/9] bg-gradient-to-br from-primary/10 via-secondary to-accent/10 flex items-center justify-center">
                 <div className="text-center">
                   <Building2 className="w-16 h-16 text-primary mx-auto mb-3" />
-                  <p className="text-muted-foreground font-inter">Consultório Dr. Luan Maciel</p>
+                  <p className="text-muted-foreground font-inter">Consultório Dr. Márcio Pelegrina</p>
                 </div>
               </div>
 
@@ -55,9 +55,9 @@ const Unidades = () => {
                         <div>
                           <p className="font-inter text-sm text-accent mb-1">Endereço</p>
                           <p className="font-semibold text-foreground">
-                            R. Emília Marengo, 1040<br />
-                            Jardim Anália Franco (Tatuapé), São Paulo - SP<br />
-                            CEP: 03336-000
+                            [ENDEREÇO]<br />
+                            [CIDADE] – [ESTADO]<br />
+                            CEP: [CEP]
                           </p>
                         </div>
                       </div>
@@ -69,7 +69,7 @@ const Unidades = () => {
                         <div>
                           <p className="font-inter text-sm text-accent mb-1">Contato</p>
                           <p className="font-semibold text-foreground">
-                            WhatsApp: (11) 98338-5832
+                            WhatsApp: [TELEFONE]
                           </p>
                         </div>
                       </div>
@@ -90,28 +90,20 @@ const Unidades = () => {
 
                     {/* WhatsApp Button */}
                     <a
-                      href="https://api.whatsapp.com/send/?phone=5511983385832&text=Ol%C3%A1%21+Acabei+de+visitar+seu+site.+Pode+me+passar+mais+informa%C3%A7%C3%B5es%3F&type=phone_number&app_absent=0"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      href="#"
                       className="inline-flex items-center justify-center gap-3 w-full bg-accent hover:bg-accent/90 text-accent-foreground font-inter font-semibold py-4 px-6 rounded-lg transition-all duration-300 hover-lift shadow-gold"
                     >
                       Agendar Consulta
                     </a>
                   </div>
 
-                  {/* Map Column */}
+                  {/* Map Column - Placeholder */}
                   <div className="order-first md:order-last">
-                    <div className="aspect-square rounded-xl overflow-hidden shadow-gold border border-border sticky top-24">
-                      <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.3644777353416!2d-46.56061866438073!3d-23.555349752288475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5ff3d82ea343%3A0x36c1bdd8c8edfa62!2sCl%C3%ADnica%20Dr.%20Luan%20Maciel%20-%20Odontologia%20e%20Est%C3%A9tica!5e0!3m2!1sen!2sbr!4v1767620441525!5m2!1sen!2sbr"
-                        width="100%"
-                        height="100%"
-                        style={{ border: 0 }}
-                        allowFullScreen
-                        loading="lazy"
-                        referrerPolicy="no-referrer-when-downgrade"
-                        title="Localização Dr. Luan Maciel - R. Emília Marengo, 1040 - Jardim Anália Franco"
-                      />
+                    <div className="aspect-square rounded-xl overflow-hidden shadow-gold border border-border sticky top-24 bg-muted/30 flex items-center justify-center">
+                      <div className="text-center space-y-2">
+                        <MapPin className="w-12 h-12 text-muted-foreground/40 mx-auto" />
+                        <p className="text-sm text-muted-foreground/60 font-inter">[MAPA - INSERIR ENDEREÇO]</p>
+                      </div>
                     </div>
                   </div>
                 </div>

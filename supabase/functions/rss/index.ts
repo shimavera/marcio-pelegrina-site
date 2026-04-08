@@ -20,7 +20,7 @@ serve(async (req) => {
 
     const baseUrl = Deno.env.get('VITE_SUPABASE_URL')?.includes('localhost') 
       ? 'http://localhost:5173' 
-      : 'https://drluanmaciel.com.br';
+      : 'https://drmarciopelegrina.com.br';
 
     // Fetch last 50 published posts
     const { data: posts, error } = await supabase
@@ -57,15 +57,15 @@ serve(async (req) => {
     let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
     xml += '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n';
     xml += '  <channel>\n';
-    xml += `    <title>Dr. Luan Maciel - Odontologia Avançada</title>\n`;
+    xml += `    <title>Dr. Márcio Pelegrina - Odontologia Avançada</title>\n`;
     xml += `    <link>${baseUrl}/blog</link>\n`;
-    xml += `    <description>Blog do Dr. Luan Maciel (CROSP 158810), especialista em Estética Dental e Endodontia. Conteúdos sobre lentes de contato dental, facetas, clareamento, tratamento de canal e tecnologias odontológicas de ponta.</description>\n`;
+    xml += `    <description>Blog do Dr. Márcio Pelegrina (CRO [CROSP]), especialista em Estética Dental e Endodontia. Conteúdos sobre lentes de contato dental, facetas, clareamento, tratamento de canal e tecnologias odontológicas de ponta.</description>\n`;
     xml += `    <language>pt-BR</language>\n`;
     xml += `    <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>\n`;
     xml += `    <atom:link href="${baseUrl}/functions/v1/rss" rel="self" type="application/rss+xml" />\n`;
-    xml += `    <webMaster>contato@drluanmaciel.com.br (Dr. Luan Maciel)</webMaster>\n`;
-    xml += `    <managingEditor>contato@drluanmaciel.com.br (Dr. Luan Maciel)</managingEditor>\n`;
-    xml += `    <copyright>Copyright ${new Date().getFullYear()} Dr. Luan Maciel - Todos os direitos reservados</copyright>\n`;
+    xml += `    <webMaster>contato@drmarciopelegrina.com.br (Dr. Márcio Pelegrina)</webMaster>\n`;
+    xml += `    <managingEditor>contato@drmarciopelegrina.com.br (Dr. Márcio Pelegrina)</managingEditor>\n`;
+    xml += `    <copyright>Copyright ${new Date().getFullYear()} Dr. Márcio Pelegrina - Todos os direitos reservados</copyright>\n`;
     xml += `    <category>Odontologia</category>\n`;
     xml += `    <category>Estética Dental</category>\n`;
     xml += `    <category>Endodontia</category>\n`;
@@ -79,7 +79,7 @@ serve(async (req) => {
       xml += `      <title><![CDATA[${escapeXml(post.title)}]]></title>\n`;
       xml += `      <link>${link}</link>\n`;
       xml += `      <description><![CDATA[${escapeXml(description)}]]></description>\n`;
-      xml += `      <author>${escapeXml(post.author || 'Dr. Luan Maciel')}</author>\n`;
+      xml += `      <author>${escapeXml(post.author || 'Dr. Márcio Pelegrina')}</author>\n`;
       xml += `      <pubDate>${pubDate}</pubDate>\n`;
       xml += `      <guid isPermaLink="true">${link}</guid>\n`;
       xml += '    </item>\n';

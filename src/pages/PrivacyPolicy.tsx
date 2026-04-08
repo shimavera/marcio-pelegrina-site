@@ -41,7 +41,7 @@ const PrivacyPolicy = () => {
               {/* Introduction */}
               <div className="mb-12 p-6 bg-accent/5 border border-accent/20 rounded-lg">
                 <p className="text-foreground font-inter leading-relaxed">
-                  O <strong>Dr. Luan Maciel - Odontologia Avançada</strong> está comprometido com a proteção da privacidade e dos dados pessoais de seus pacientes e visitantes. Esta Política de Privacidade descreve como coletamos, usamos, armazenamos e protegemos suas informações pessoais, em conformidade com a <strong>Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018)</strong> e demais legislações aplicáveis.
+                  O <strong>Dr. Márcio Pelegrina - Odontologia Avançada</strong> está comprometido com a proteção da privacidade e dos dados pessoais de seus pacientes e visitantes. Esta Política de Privacidade descreve como coletamos, usamos, armazenamos e protegemos suas informações pessoais, em conformidade com a <strong>Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018)</strong> e demais legislações aplicáveis.
                 </p>
               </div>
 
@@ -207,7 +207,7 @@ const PrivacyPolicy = () => {
                     <li><strong>Prestadores de serviços:</strong> laboratórios, fornecedores de tecnologia, plataformas de agendamento</li>
                     <li><strong>Parceiros comerciais:</strong> apenas com seu consentimento explícito</li>
                     <li><strong>Autoridades legais:</strong> quando exigido por lei ou ordem judicial</li>
-                    <li><strong>Clínicas parceiras:</strong> onde o Dr. Luan Maciel atua</li>
+                    <li><strong>Clínicas parceiras:</strong> onde o Dr. Márcio Pelegrina atua</li>
                   </ul>
                   <p className="leading-relaxed text-muted-foreground mt-4">
                     Todos os parceiros e prestadores de serviços são obrigados a manter a confidencialidade e segurança dos dados, em conformidade com a LGPD.
@@ -308,15 +308,15 @@ const PrivacyPolicy = () => {
                     Para dúvidas sobre esta Política de Privacidade ou para exercer seus direitos sob a LGPD, entre em contato:
                   </p>
                   <div className="mt-6 p-6 bg-accent/5 border border-accent/20 rounded-lg space-y-3">
-                    <p className="text-foreground font-semibold text-lg">Dr. Luan Maciel - Odontologia Avançada</p>
+                    <p className="text-foreground font-semibold text-lg">Dr. Márcio Pelegrina - Odontologia Avançada</p>
                     <p className="text-muted-foreground">
-                      <strong>CROSP:</strong> 158810
+                      <strong>CRO:</strong> [CROSP]
                     </p>
                     <p className="text-muted-foreground">
-                      <strong>Endereço:</strong> R. Emília Marengo, 1040 - Jardim Anália Franco, São Paulo - SP, 03336-000
+                      <strong>Endereço:</strong> [ENDEREÇO] - [CIDADE], [ESTADO], [CEP]
                     </p>
                     <p className="text-muted-foreground">
-                      <strong>WhatsApp:</strong> (11) 98338-5832
+                      <strong>WhatsApp:</strong> [TELEFONE]
                     </p>
                     <p className="text-muted-foreground">
                       <strong>Horário:</strong> Segunda a Sexta, das 9h às 18h
