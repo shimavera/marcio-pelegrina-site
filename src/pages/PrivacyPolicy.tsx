@@ -207,7 +207,7 @@ const PrivacyPolicy = () => {
                     <li><strong>Prestadores de serviços:</strong> laboratórios, fornecedores de tecnologia, plataformas de agendamento</li>
                     <li><strong>Parceiros comerciais:</strong> apenas com seu consentimento explícito</li>
                     <li><strong>Autoridades legais:</strong> quando exigido por lei ou ordem judicial</li>
-                    <li><strong>Clínicas parceiras:</strong> onde o Dr. Luan Maciel atua</li>
+                    <li><strong>Clínicas parceiras:</strong> onde o Dr. Márcio Pelegrina atua</li>
                   </ul>
                   <p className="leading-relaxed text-muted-foreground mt-4">
                     Todos os parceiros e prestadores de serviços são obrigados a manter a confidencialidade e segurança dos dados, em conformidade com a LGPD.
