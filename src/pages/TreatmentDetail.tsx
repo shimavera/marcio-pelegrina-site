@@ -241,10 +241,10 @@ const TreatmentDetail = () => {
                         
                         <div className="space-y-3 text-sm md:text-base text-muted-foreground leading-relaxed">
                           <p>
-                            <strong className="text-foreground">Dr. Luan Maciel</strong> é especialista em Lentes de Porcelana, Endodontia e Estética Dental, com atuação precisa e olhar estético apurado. Dedica-se a transformar sorrisos com naturalidade e sofisticação.
+                            <strong className="text-foreground">Dr. Márcio Pelegrina</strong> é especialista em Lentes de Porcelana, Endodontia e Estética Dental, com atuação precisa e olhar estético apurado. Dedica-se a transformar sorrisos com naturalidade e sofisticação.
                           </p>
                           <p>
-                            Com formação sólida e experiência em procedimentos estéticos de alta complexidade, o Dr. Luan Maciel é reconhecido pela excelência técnica, atendimento humanizado e uso de tecnologias de última geração para proporcionar resultados excepcionais.
+                            Com formação sólida e experiência em procedimentos estéticos de alta complexidade, o Dr. Márcio Pelegrina é reconhecido pela excelência técnica, atendimento humanizado e uso de tecnologias de última geração para proporcionar resultados excepcionais.
                           </p>
                           <div className="flex flex-wrap gap-2 pt-2">
                             <Badge variant="outline" className="text-xs">
