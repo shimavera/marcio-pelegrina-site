@@ -135,7 +135,7 @@ const TreatmentDetail = () => {
                       className="w-full border-primary text-primary hover:bg-primary/5"
                       asChild
                     >
-                      <a href="tel:+5511983385832">
+                      <a href="tel:[TELEFONE]">
                         <Phone className="w-4 h-4 mr-2" />
                         Ligar
                       </a>
