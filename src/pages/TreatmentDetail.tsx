@@ -231,13 +231,12 @@ const TreatmentDetail = () => {
                       </div>
                       <Separator className="mb-4" />
                       
-                      <div className="grid md:grid-cols-[200px,1fr] gap-6">
-                        <div className="relative rounded-lg overflow-hidden shadow-[var(--shadow-elevated)] h-[200px] md:h-auto">
-                          <img 
-                            src={drLuanMaciel} 
-                            alt="Dr. Luan Maciel" 
-                            className="w-full h-full object-cover"
-                          />
+                        <div className="grid md:grid-cols-[200px,1fr] gap-6">
+                        <div className="relative rounded-lg overflow-hidden shadow-[var(--shadow-elevated)] h-[200px] md:h-auto bg-muted/30 flex items-center justify-center">
+                          <div className="text-center space-y-2">
+                            <User className="w-12 h-12 text-muted-foreground/40 mx-auto" />
+                            <p className="text-xs text-muted-foreground/60">Foto do Doutor</p>
+                          </div>
                         </div>
                         
                         <div className="space-y-3 text-sm md:text-base text-muted-foreground leading-relaxed">
