@@ -29,7 +29,7 @@ import {
 import { Calendar } from "@/components/ui/calendar";
 import { format } from "date-fns";
 import { cn } from "@/lib/utils";
-import drLuanMacielLogo from "@/assets/dr-luan-logo-login.webp";
+// Logo removed - using text instead
 import BlogAdminTabs from "@/components/blog/BlogAdminTabs";
 import ContentGapAnalysis from "@/components/blog/ContentGapAnalysis";
 import {
