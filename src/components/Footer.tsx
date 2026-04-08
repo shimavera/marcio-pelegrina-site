@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { MessageCircle, Instagram } from "lucide-react";
 import { trackWorkingLead } from "@/lib/utils";
+import logoFooter from "@/assets/marcio/logo-footer.webp";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -15,9 +16,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 py-12 md:py-16">
           {/* Brand Section */}
           <div className="flex flex-col gap-4 items-start">
-            <span className="font-kiona text-xl font-bold text-foreground">
-              Dr. Márcio Pelegrina
-            </span>
+            <img src={logoFooter} alt="Márcio Pelegrina - Reabilitação Oral" className="h-12 w-auto" />
             <p className="text-muted-foreground font-inter text-sm leading-relaxed max-w-xs">
               Especialista em Prótese Dentária e Reabilitação Oral.
               Atendimento humano, acolhedor e de excelência.

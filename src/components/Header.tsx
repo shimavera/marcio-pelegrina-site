@@ -4,6 +4,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { trackWorkingLead } from "@/lib/utils";
+import logoHeader from "@/assets/marcio/logo-header.webp";
 
 const Header = () => {
   const location = useLocation();
@@ -29,9 +30,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo - Left */}
           <Link to="/" className="flex items-center animate-fade-in">
-            <span className="font-kiona text-lg md:text-xl font-bold text-foreground">
-              Dr. Márcio Pelegrina
-            </span>
+            <img src={logoHeader} alt="PLGRN - Márcio Pelegrina Reabilitação Oral" className="h-10 md:h-12 w-auto" />
           </Link>
 
           {/* Desktop Navigation - Center */}

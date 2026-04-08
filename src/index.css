@@ -4,41 +4,43 @@
 
 @layer base {
   :root {
-    --background: 30 15% 97%;
-    --foreground: 25 20% 8%;
+    /* Paleta PLGRN Brand - cores oficiais */
+    --background: 40 11% 96%;        /* #F5F4F1 White Smoke */
+    --foreground: 30 10% 11%;        /* #211F1C Eerie Black */
 
-    --card: 30 12% 99%;
-    --card-foreground: 25 20% 8%;
+    --card: 40 11% 98%;
+    --card-foreground: 30 10% 11%;   /* Eerie Black */
 
-    --popover: 30 12% 99%;
-    --popover-foreground: 25 20% 8%;
+    --popover: 40 11% 98%;
+    --popover-foreground: 30 10% 11%;
 
-    --primary: 25 18% 20%;
-    --primary-foreground: 35 25% 95%;
+    --primary: 30 10% 11%;           /* #211F1C Eerie Black */
+    --primary-foreground: 40 11% 96%;/* White Smoke */
 
-    --secondary: 30 10% 93%;
-    --secondary-foreground: 25 20% 8%;
+    --secondary: 30 10% 88%;         /* #DED7CD Timberwolf */
+    --secondary-foreground: 30 10% 11%;
 
-    --muted: 30 8% 93%;
-    --muted-foreground: 25 10% 40%;
+    --muted: 30 10% 88%;             /* Timberwolf */
+    --muted-foreground: 30 12% 34%;  /* #716147 Walnut Brown */
 
-    --accent: 28 45% 42%;
-    --accent-foreground: 35 25% 97%;
+    --accent: 30 12% 34%;            /* #716147 Walnut Brown */
+    --accent-foreground: 40 11% 96%; /* White Smoke */
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 30 12% 85%;
-    --input: 30 12% 85%;
-    --ring: 28 45% 42%;
+    --border: 30 10% 83%;            /* Timberwolf mais escuro */
+    --input: 30 10% 83%;
+    --ring: 30 12% 34%;              /* Walnut Brown */
 
     --radius: 0.5rem;
 
-    --gradient-gold: linear-gradient(135deg, hsl(25 18% 18%) 0%, hsl(28 35% 35%) 25%, hsl(30 40% 42%) 50%, hsl(32 35% 48%) 75%, hsl(25 18% 22%) 100%);
-    --gradient-subtle: linear-gradient(135deg, hsl(30 15% 97%), hsl(30 10% 100%));
-    --shadow-gold: 0 10px 40px hsl(28 45% 42% / 0.25);
-    --shadow-gold-lg: 0 20px 60px hsl(28 45% 42% / 0.3);
-    --shadow-elevated: 0 10px 40px hsl(25 18% 10% / 0.1);
+    /* Beaver #A39481 para gradients */
+    --gradient-gold: linear-gradient(135deg, hsl(30 10% 11%) 0%, hsl(30 12% 34%) 30%, hsl(28 14% 57%) 60%, hsl(30 12% 34%) 85%, hsl(30 10% 11%) 100%);
+    --gradient-subtle: linear-gradient(135deg, hsl(40 11% 96%), hsl(40 11% 98%));
+    --shadow-gold: 0 10px 40px hsl(30 12% 34% / 0.25);
+    --shadow-gold-lg: 0 20px 60px hsl(30 12% 34% / 0.3);
+    --shadow-elevated: 0 10px 40px hsl(30 10% 11% / 0.1);
 
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }

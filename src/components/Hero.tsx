@@ -23,8 +23,8 @@ const Hero = () => {
             {/* Content Section */}
             <div className="space-y-4 sm:space-y-5 lg:space-y-6 text-center lg:text-left order-1">
               <div className="space-y-3 sm:space-y-4 animate-fade-in-up">
-                <p className="text-xs sm:text-sm text-accent uppercase tracking-wider font-medium">
-                  Dr. Márcio Pelegrina • CROSP 116495
+                <p className="text-xs sm:text-sm text-accent uppercase tracking-[0.2em] font-medium">
+                  PLGRN • CROSP 116495
                 </p>
 
                 <div className="space-y-2">
