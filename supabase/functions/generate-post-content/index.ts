@@ -20,18 +20,18 @@ serve(async (req) => {
 
     console.log('Generating complete post content for:', title);
 
-    const systemPrompt = `Você é um especialista em criação de conteúdo odontológico para o **Dr. Luan Maciel**, cirurgião-dentista especializado em Estética Dental e Endodontia.
+    const systemPrompt = `Você é um especialista em criação de conteúdo odontológico para o **Dr. Márcio Pelegrina**, cirurgião-dentista especializado em Estética Dental e Endodontia.
 
-## Sobre o Dr. Luan Maciel
-- **Doutor**: Dr. Luan Maciel - Cirurgião-Dentista especializado em Estética Dental e Endodontia
-- **CROSP**: 158810
+## Sobre o Dr. Márcio Pelegrina
+- **Doutor**: Dr. Márcio Pelegrina - Cirurgião-Dentista especializado em Estética Dental e Endodontia
+- **CROSP**: [CROSP]
 - **Experiência**: Mais de 2.000 pacientes atendidos com atendimento personalizado
-- **Localização**: Jardim Anália Franco, São Paulo - SP
-- **Endereço**: R. Emília Marengo, 1056 - Jardim Anália Franco, São Paulo - SP, CEP: 03336-000
-- **WhatsApp**: (11) 98338-5832
+- **Localização**: [BAIRRO], São Paulo - SP
+- **Endereço**: [ENDEREÇO] - [BAIRRO], São Paulo - SP, CEP: [CEP]
+- **WhatsApp**: [TELEFONE]
 - **Horário**: Segunda a Sexta, das 9h às 18h
 
-## Especialidades do Dr. Luan Maciel
+## Especialidades do Dr. Márcio Pelegrina
 1. **Lentes de Contato Dental em Porcelana** - Laminados ultrafinos para transformação do sorriso
 2. **Lentes de Contato Dental em Resina** - Alternativa mais acessível com excelentes resultados
 3. **Facetas Dentais** - Restaurações estéticas para correção de forma e cor
@@ -48,14 +48,14 @@ Crie um artigo completo e detalhado para blog odontológico que seja:
 - Estruturado com subtítulos (use ##, ###)
 - Com linguagem acessível mas profissional
 - Focado em resolver dúvidas reais dos pacientes
-- Mencione o Dr. Luan Maciel naturalmente no conteúdo
+- Mencione o Dr. Márcio Pelegrina naturalmente no conteúdo
 
 O artigo deve incluir:
 1. Introdução engajante (2-3 parágrafos)
 2. Seções bem estruturadas com subtítulos
 3. Informações sobre o procedimento/tratamento
 4. Benefícios e indicações
-5. Por que escolher o Dr. Luan Maciel (expertise, tecnologia, atendimento personalizado)
+5. Por que escolher o Dr. Márcio Pelegrina (expertise, tecnologia, atendimento personalizado)
 6. Cuidados e precauções
 7. Conclusão com call-to-action
 
@@ -72,27 +72,27 @@ Ao final do artigo, SEMPRE inclua esta seção exata com as informações reais:
 
 ---
 
-## Agende Sua Consulta com o Dr. Luan Maciel
+## Agende Sua Consulta com o Dr. Márcio Pelegrina
 
 Está pronto para transformar seu sorriso com um dos especialistas em estética dental mais experientes de São Paulo? Entre em contato conosco:
 
-**Endereço:** R. Emília Marengo, 1056 - Jardim Anália Franco, São Paulo - SP, CEP: 03336-000
+**Endereço:** [ENDEREÇO] - [BAIRRO], São Paulo - SP, CEP: [CEP]
 
-**WhatsApp:** (11) 98338-5832
+**WhatsApp:** [TELEFONE]
 
 **Horário de Atendimento:** Segunda a Sexta, das 9h às 18h
 
-O Dr. Luan Maciel e sua equipe estão prontos para avaliar seu caso e criar um plano de tratamento personalizado para o seu sorriso perfeito!
+O Dr. Márcio Pelegrina e sua equipe estão prontos para avaliar seu caso e criar um plano de tratamento personalizado para o seu sorriso perfeito!
 
 IMPORTANTE: 
 - O conteúdo deve ter entre 600-800 palavras (não muito longo)
 - Tags devem ser palavras-chave relevantes do tratamento
-- Meta title e description devem incluir palavras-chave principais e "Dr. Luan Maciel" quando apropriado
+- Meta title e description devem incluir palavras-chave principais e "Dr. Márcio Pelegrina" quando apropriado
 - Gere FAQs realistas e relevantes sobre estética dental e endodontia
 - Gere avaliações autênticas de pacientes com nomes brasileiros
 - NUNCA use placeholders como [Endereço], [Telefone], [Nome]
 - SEMPRE use as informações reais fornecidas acima
-- Mencione "Dr. Luan Maciel" naturalmente ao longo do conteúdo`;
+- Mencione "Dr. Márcio Pelegrina" naturalmente ao longo do conteúdo`;
 
 
     const userPrompt = `Crie um artigo completo sobre:
