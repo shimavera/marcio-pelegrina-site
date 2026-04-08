@@ -8,7 +8,7 @@ import { Separator } from "@/components/ui/separator";
 import { ArrowLeft, Phone, MessageCircle, CheckCircle2, Clock, Users, TrendingUp, Star, Info, AlertCircle, Award, ShieldCheck } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import drLuanMaciel from "@/assets/dr-luan-hero.webp";
+import { User } from "lucide-react";
 import { trackWorkingLead } from "@/lib/utils";
 
 interface Treatment {
