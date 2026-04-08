@@ -354,9 +354,9 @@ const TreatmentDetail = () => {
                         <Separator />
                         <div className="text-muted-foreground">
                           <strong className="text-foreground">Endereço:</strong><br />
-                          R. Emília Marengo, 1040<br />
-                          Jardim Anália Franco – São Paulo/SP<br />
-                          CEP: 03336-000
+                          [ENDEREÇO]<br />
+                          [CIDADE] – [ESTADO]<br />
+                          CEP: [CEP]
                         </div>
                       </div>
                     </CardContent>
