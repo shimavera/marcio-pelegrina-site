@@ -756,7 +756,7 @@ const BlogAdmin = () => {
         <header className="fixed top-0 left-0 right-0 z-50 bg-background border-b border-border shadow-sm">
           <div className="container mx-auto px-4 py-3 md:py-4 flex items-center justify-between gap-4">
             <div className="flex items-center gap-3 md:gap-4 min-w-0">
-              <img src={drLuanMacielLogo} alt="Dr. Luan Maciel" className="h-8 md:h-12 flex-shrink-0" />
+              <span className="font-kiona text-lg font-bold text-foreground flex-shrink-0">Dr. Márcio Pelegrina</span>
               <div>
                 <h1 className="font-kiona text-base md:text-xl text-foreground">Painel Administrativo</h1>
                 <p className="text-xs text-muted-foreground hidden sm:block">Gerenciamento de Conteúdo</p>
