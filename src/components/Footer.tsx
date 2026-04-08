@@ -141,7 +141,7 @@ const Footer = () => {
                   </svg>
                 </a>
                 <a 
-                  href="#" 
+                  href="https://www.instagram.com/marciopelegrina?igsh=eXU2amxibGJzZTJt" 
                   aria-label="Instagram - [INSTAGRAM]" 
                   className="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 hover:bg-primary/20 text-primary transition-all duration-300"
                 >
