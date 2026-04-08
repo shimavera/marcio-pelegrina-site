@@ -10,7 +10,7 @@ interface WebVitalsMetric {
 const WebVitals = () => {
   useEffect(() => {
     // Only run in production and if PerformanceObserver is supported
-    if (process.env.NODE_ENV !== 'production' || !('PerformanceObserver' in window)) {
+    if (import.meta.env.MODE !== 'production' || !('PerformanceObserver' in window)) {
       return;
     }
 
