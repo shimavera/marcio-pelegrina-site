@@ -237,7 +237,7 @@ const BlogAdmin = () => {
 
     console.log('✅ Categoria encontrada:', categoryObj);
 
-    // Get default location (first location - Clínica Dr. Luan Maciel)
+    // Get default location (first location - Dr. Márcio Pelegrina)
     const defaultLocation = locations.length > 0 ? locations[0] : null;
     console.log('📍 Localização padrão:', defaultLocation);
 

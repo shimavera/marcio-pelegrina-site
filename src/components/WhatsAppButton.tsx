@@ -2,7 +2,7 @@ import whatsappIcon from "@/assets/whatsapp-icon.png";
 import { trackWorkingLead } from "@/lib/utils";
 
 const WhatsAppButton = () => {
-  const whatsappUrl = "#";
+  const whatsappUrl = "https://wa.me/5519974135932?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta";
 
   const handleClick = () => {
     trackWorkingLead();

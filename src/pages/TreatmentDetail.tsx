@@ -218,7 +218,7 @@ const TreatmentDetail = () => {
                     </Card>
                   )}
 
-                  {/* About Dr. Luan Section */}
+                  {/* About Dr. Márcio Section */}
                   <Card className="border-border/50">
                     <CardContent className="p-5 md:p-6">
                       <div className="flex items-center gap-3 mb-4">

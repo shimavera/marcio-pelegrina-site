@@ -22,3 +22,14 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Imagens originais (muito grandes para git)
+Marcio Pelegrini/
+Marcio Pelegrini 2/
+Marcio Pelegrini 3/
+
+# Screenshots de desenvolvimento
+screenshot-*.png
+
+# Environment
+.env

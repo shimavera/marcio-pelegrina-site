@@ -168,7 +168,7 @@ const BlogPost = () => {
   const postUrl = `${window.location.origin}/blog/${post.slug}`;
   const seoTitle = post.meta_title || post.title;
   const seoDescription = post.meta_description || post.excerpt || '';
-  const seoImage = post.image_url || `${window.location.origin}/dr-luan-maciel-logo.webp`;
+  const seoImage = post.image_url || `${window.location.origin}/favicon.ico`;
 
   // Use FAQs and Reviews from database if available, otherwise use samples
   const postFAQs = (post as any).faqs && (post as any).faqs.length > 0 
@@ -215,14 +215,14 @@ const BlogPost = () => {
         <LocalBusinessSchema
           location={{
             name: post.locations.name,
-            address: 'R. Emília Marengo, 1040 - Jardim Anália Franco',
+            address: 'Rua Turiassu, 578 - Perdizes',
             city: 'São Paulo',
             state: 'SP',
-            postalCode: '03336-000',
-            telephone: '(11) 98338-5832',
-            geo_lat: -23.5553,
-            geo_lng: -46.5606,
-            areaServed: ['Jardim Anália Franco', 'Tatuapé', 'Vila Formosa'],
+            postalCode: '05005-000',
+            telephone: '(19) 97413-5932',
+            geo_lat: -23.5250,
+            geo_lng: -46.6850,
+            areaServed: ['Perdizes', 'Pompeia', 'Sumaré'],
           }}
           rating={{
             value: 4.9,

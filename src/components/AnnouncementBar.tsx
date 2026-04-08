@@ -3,8 +3,6 @@ import { ShieldCheck, AlertTriangle, Info } from "lucide-react";
 
 const announcements = [
   { text: "Atendimento exclusivamente particular", icon: ShieldCheck },
-  { text: "Não aceitamos convênios odontológicos", icon: AlertTriangle },
-  { text: "No momento, não estamos aceitando novos currículos", icon: Info },
 ];
 
 const AnnouncementBar = () => {

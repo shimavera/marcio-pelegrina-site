@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Quote, Star } from "lucide-react";
+import { ScrollReveal } from "@/hooks/use-scroll-reveal";
 import {
   Carousel,
   CarouselContent,
@@ -9,49 +10,24 @@ import {
   CarouselApi,
 } from "@/components/ui/carousel";
 import { useEffect, useState } from "react";
-import patientRodrigo from "@/assets/patient-rodrigo.webp";
-import patientAlyne from "@/assets/patient-alyne.webp";
-import patientBruna from "@/assets/patient-bruna.webp";
-import patientFernando from "@/assets/patient-fernando.webp";
-import patientAnderson from "@/assets/patient-anderson.webp";
-import patientVitor from "@/assets/patient-vitor.webp";
-
 const patientTestimonials = [
   {
-    name: "Rodrigo Alaminos",
-    text: "Estou muito contente com o meu novo sorriso! As lentes de resina ficaram maravilhosas, super naturais e do jeitinho que eu sempre quis! Muito obrigada Dr Luan por transformar meu sorriso com tanto carinho e profissionalismo!",
+    name: "Paciente 1",
+    text: "Atendimento incrível! O Dr. Márcio é extremamente atencioso e cuidadoso. Me senti acolhido desde a primeira consulta. O resultado do tratamento superou todas as minhas expectativas.",
     rating: 5,
-    image: patientRodrigo,
+    image: null,
   },
   {
-    name: "Alyne Oliveira",
-    text: "Amei meu resultado!!! Obrigada pela paciência e atenção que teve comigo em um momento tão delicado de dor. Mãos abençoadas!",
+    name: "Paciente 2",
+    text: "Profissional excepcional! O consultório é lindo e o atendimento é muito humanizado. Recomendo de olhos fechados para quem busca qualidade e confiança no tratamento odontológico.",
     rating: 5,
-    image: patientAlyne,
+    image: null,
   },
   {
-    name: "Bruna Grilli",
-    text: "O Dr. Luan é excelente e super cuidadoso! Ele cuida de toda a minha profilaxia, fez meu clareamento e sempre faz minha limpeza. Todo mundo elogia a naturalidade das minhas resinas, ficou muito lindo e natural. Recomendo e confio!",
+    name: "Paciente 3",
+    text: "Encontrei no Dr. Márcio um profissional dedicado e competente. O ambiente do consultório transmite tranquilidade e segurança. Estou muito satisfeito com o resultado da minha reabilitação oral.",
     rating: 5,
-    image: patientBruna,
-  },
-  {
-    name: "Fernando Souza",
-    text: "Procurei o Dr. Luan para melhorar meu sorriso. Ele elaborou todo o protocolo de tratamento para uma reabilitação oral completa. Estamos em tratamento e já estou ansioso para finalizar e poder sorrir com conforto.",
-    rating: 5,
-    image: patientFernando,
-  },
-  {
-    name: "Anderson Morpheus",
-    text: "Atendimento primoroso bem como toda atenção desde a avaliação como as sugestões que nos esclareceram absurdamente, de paciente a fã, com toda certeza todos meus familiares terão o prazer de serem atendidos por um profissional deste porte. Gratidão eterna.",
-    rating: 5,
-    image: patientAnderson,
-  },
-  {
-    name: "Vitor Andrade",
-    text: "Ficou muito bom, não tenho palavras pra expressar o quão grato eu fiquei pelo trabalho que você fez nos meus dentes, realizou um sonho muito antigo. Obrigado de verdade!!!",
-    rating: 5,
-    image: patientVitor,
+    image: null,
   },
 ];
 
@@ -86,9 +62,10 @@ const Testimonials = () => {
   }, [testimonialsApi, isAutoPlayActive, isHovering]);
 
   return (
-    <section className="py-6 sm:py-8 lg:py-10 overflow-x-hidden" style={{ backgroundColor: '#F6F5F5' }}>
+    <section className="py-16 sm:py-20 lg:py-24 overflow-x-hidden bg-secondary">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16 animate-fade-in-up">
+        <ScrollReveal animation="fade-up">
+        <div className="text-center mb-16">
           <p className="text-accent font-inter text-sm uppercase tracking-wider mb-3 inline-block px-4 py-2 rounded-full border border-accent/30 bg-accent/5">
             Depoimentos
           </p>
@@ -99,7 +76,9 @@ const Testimonials = () => {
             Histórias reais de transformação e satisfação com lentes dentais e tratamentos
           </p>
         </div>
+        </ScrollReveal>
 
+        <ScrollReveal animation="fade-up" delay={200}>
         <Carousel
           setApi={setTestimonialsApi}
           opts={{
@@ -128,11 +107,19 @@ const Testimonials = () => {
                       {testimonial.text}
                     </p>
                     <div className="flex items-center gap-3">
-                      <img 
-                        src={testimonial.image} 
-                        alt={testimonial.name} 
-                        className="w-12 h-12 rounded-full object-cover"
-                      />
+                      {testimonial.image ? (
+                        <img
+                          src={testimonial.image}
+                          alt={testimonial.name}
+                          className="w-12 h-12 rounded-full object-cover"
+                        />
+                      ) : (
+                        <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                          <span className="text-primary font-semibold text-lg">
+                            {testimonial.name.charAt(0)}
+                          </span>
+                        </div>
+                      )}
                       <p className="text-foreground font-semibold font-inter">
                         {testimonial.name}
                       </p>
@@ -168,6 +155,7 @@ const Testimonials = () => {
             />
           </div>
         </Carousel>
+        </ScrollReveal>
       </div>
     </section>
   );

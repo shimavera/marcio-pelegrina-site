@@ -1,124 +1,98 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Stethoscope, Smile, Sparkles, Activity, Heart, Scissors, Syringe, Users, ArrowUpRight } from "lucide-react";
-import { Link } from "react-router-dom";
-import { useQuery } from "@tanstack/react-query";
-import { supabase } from "@/integrations/supabase/client";
-import lentesIcon from "@/assets/lentes-icon.png";
-import canalIcon from "@/assets/canal-icon.png";
-import profilaxiaIcon from "@/assets/profilaxia-icon.png";
-import proteseIcon from "@/assets/protese-icon.png";
-import resinaIcon from "@/assets/resina-icon.png";
-import remocaoLentesIcon from "@/assets/remocao-lentes-icon.png";
-import gengivoplastiaIcon from "@/assets/gengivoplastia-icon.png";
-import implantesIcon from "@/assets/implantes-icon.png";
+import { Stethoscope, Smile, Sparkles, Heart, Shield, Wrench, Syringe, Scan } from "lucide-react";
+import { ScrollReveal } from "@/hooks/use-scroll-reveal";
 
-// Map icon names to components
-const iconMap: Record<string, any> = {
-  Stethoscope,
-  Smile,
-  Sparkles,
-  Activity,
-  Heart,
-  Scissors,
-  Syringe,
-  Users,
-};
-
-// Map custom image icons by treatment slug
-const customIconMap: Record<string, string> = {
-  "lentes-de-porcelana": lentesIcon,
-  "tratamento-de-canal": canalIcon,
-  "profilaxia-limpeza": profilaxiaIcon,
-  "protese-protocolo": proteseIcon,
-  "lentes-de-resina": resinaIcon,
-  "remocao-de-lentes": remocaoLentesIcon,
-  "gengivoplastia": gengivoplastiaIcon,
-  "implantes-dentarios": implantesIcon,
-};
-
-interface Treatment {
-  id: string;
-  slug: string;
-  title: string;
-  short_description: string;
-  icon_name: string;
-}
+const treatments = [
+  {
+    title: "Reabilitação Oral",
+    description: "Planejamento completo para devolver função e estética ao sorriso, com próteses e restaurações personalizadas.",
+    icon: Sparkles,
+  },
+  {
+    title: "Lentes de Contato Dental",
+    description: "Lâminas ultrafinas de porcelana que transformam o sorriso com naturalidade e harmonia.",
+    icon: Smile,
+  },
+  {
+    title: "Clareamento Dental",
+    description: "Tratamento seguro e eficaz para devolver a brancura natural aos dentes.",
+    icon: Stethoscope,
+  },
+  {
+    title: "Restaurações Estéticas",
+    description: "Restaurações em resina ou porcelana que devolvem forma, cor e função aos dentes.",
+    icon: Wrench,
+  },
+  {
+    title: "Prótese Dentária",
+    description: "Soluções modernas e confortáveis para substituição de dentes perdidos, devolvendo função mastigatória e estética.",
+    icon: Shield,
+  },
+  {
+    title: "Placa de Bruxismo",
+    description: "Proteção personalizada contra o desgaste dental causado pelo apertamento e ranger dos dentes.",
+    icon: Scan,
+  },
+  {
+    title: "Implantodontia",
+    description: "Implantes dentários com tecnologia avançada para substituição definitiva de dentes perdidos.",
+    icon: Syringe,
+  },
+  {
+    title: "Endodontia",
+    description: "Tratamento de canal moderno e confortável, preservando o dente natural com segurança.",
+    icon: Heart,
+  },
+  {
+    title: "Periodontia",
+    description: "Tratamento especializado para saúde gengival, prevenção e controle de doenças periodontais.",
+    icon: Stethoscope,
+  },
+];
 
 const Services = () => {
-  const { data: treatments, isLoading } = useQuery<Treatment[]>({
-    queryKey: ['all-treatments'],
-    queryFn: async () => {
-      const { data, error } = await (supabase as any)
-        .from('treatments')
-        .select('*')
-        .order('created_at', { ascending: true });
-      
-      if (error) throw error;
-      return (data || []) as Treatment[];
-    },
-  });
-
-  if (isLoading) {
-    return (
-      <div className="min-h-screen bg-background">
-        <Header />
-        <main className="pt-20">
-          <div className="container mx-auto px-4 py-20 text-center">
-            <div className="text-muted-foreground">Carregando tratamentos...</div>
-          </div>
-        </main>
-        <Footer />
-      </div>
-    );
-  }
-
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <main className="pt-20">
-        <section className="py-20 px-4">
+      <main className="pt-24 md:pt-32">
+        <section className="py-16 md:py-20 px-4">
           <div className="container mx-auto">
-            <div className="text-center mb-16 animate-fade-in">
-              <h1 className="text-4xl md:text-5xl font-bold mb-4 gradient-text">
-                Nossos Tratamentos
-              </h1>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Oferecemos uma gama completa de tratamentos odontológicos avançados,
-                combinando tecnologia de ponta com excelência clínica.
-              </p>
-            </div>
+            <ScrollReveal animation="fade-up">
+              <div className="text-center mb-16">
+                <p className="text-accent font-inter text-sm uppercase tracking-[0.2em] mb-3 inline-block px-4 py-2 rounded-full border border-accent/30 bg-accent/5">
+                  Tratamentos
+                </p>
+                <h1 className="font-kiona text-4xl md:text-5xl font-bold mb-4 text-foreground mt-4">
+                  Nossos Tratamentos
+                </h1>
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                  Oferecemos uma gama completa de tratamentos odontológicos avançados,
+                  combinando técnica, experiência e cuidado humanizado.
+                </p>
+              </div>
+            </ScrollReveal>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {treatments?.map((treatment, index) => {
-                const IconComponent = iconMap[treatment.icon_name] || Stethoscope;
-                const customIcon = customIconMap[treatment.slug];
+              {treatments.map((treatment, index) => {
+                const IconComponent = treatment.icon;
                 return (
-                  <Link
-                    key={treatment.id}
-                    to={`/tratamentos/${treatment.slug}`}
-                    className="group"
-                  >
-                    <Card className="hover-lift animate-fade-in h-full relative" style={{ animationDelay: `${index * 0.1}s` }}>
+                  <ScrollReveal key={index} animation="fade-up" delay={index * 80}>
+                    <Card className="hover-lift h-full border-border hover:border-accent/30 transition-all duration-300">
                       <CardHeader>
-                        <ArrowUpRight className="w-5 h-5 text-muted-foreground absolute top-6 right-6 group-hover:text-foreground transition-colors" />
-                        <div className="w-14 h-14 rounded-full bg-gradient-to-br from-zinc-600 via-zinc-700 to-zinc-800 flex items-center justify-center mb-4 shadow-lg relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-br before:from-white/20 before:via-transparent before:to-transparent before:rounded-full">
-                          {customIcon ? (
-                            <img src={customIcon} alt={treatment.title} className="w-[50px] h-[50px] relative z-10" />
-                          ) : (
-                            <IconComponent className="w-6 h-6 text-white relative z-10" />
-                          )}
+                        <div className="w-14 h-14 rounded-full bg-gradient-to-br from-primary/80 via-accent/60 to-primary/40 flex items-center justify-center mb-4 shadow-lg">
+                          <IconComponent className="w-6 h-6 text-white" />
                         </div>
-                        <CardTitle>{treatment.title}</CardTitle>
+                        <CardTitle className="text-lg">{treatment.title}</CardTitle>
                       </CardHeader>
                       <CardContent>
-                        <CardDescription className="text-base">
-                          {treatment.short_description}
+                        <CardDescription className="text-base leading-relaxed">
+                          {treatment.description}
                         </CardDescription>
                       </CardContent>
                     </Card>
-                  </Link>
+                  </ScrollReveal>
                 );
               })}
             </div>

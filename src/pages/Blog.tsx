@@ -129,7 +129,7 @@ const Blog = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Blog - Dr. Luan Maciel | Odontologia Avançada"
+        title="Blog - Dr. Márcio Pelegrina | Odontologia Avançada"
         description="Fique por dentro das novidades, dicas e informações sobre estética dental, endodontia e tecnologias odontológicas."
         url={`${window.location.origin}/blog`}
       />
@@ -145,7 +145,7 @@ const Blog = () => {
           <div className="container mx-auto max-w-7xl">
             <div className="text-center mb-12 md:mb-16 animate-fade-in">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4 text-foreground font-kiona">
-                Blog Dr. Luan Maciel
+                Blog Dr. Márcio Pelegrina
               </h1>
               <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
                 Fique por dentro das novidades, dicas e informações sobre estética dental,

@@ -1,10 +1,11 @@
-import { MessageCircle, Star, ShieldCheck, User } from "lucide-react";
+import { MessageCircle, Star, ShieldCheck } from "lucide-react";
+import drMarcioHero from "@/assets/marcio/dr-marcio-hero.webp";
 import { Button } from "@/components/ui/button";
 import { trackWorkingLead } from "@/lib/utils";
 
 const Hero = () => {
-  const whatsappUrl = "#";
-  
+  const whatsappUrl = "https://wa.me/5519974135932?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o";
+
   const handleWhatsAppClick = () => {
     trackWorkingLead();
   };
@@ -16,22 +17,22 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-background via-secondary/30 to-background z-0" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,hsl(var(--primary)_/_0.05),transparent_70%)] z-0" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,hsl(var(--accent)_/_0.08),transparent_50%)] z-0" />
-        
+
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16 relative z-10">
           <div className="grid lg:grid-cols-2 gap-6 sm:gap-10 lg:gap-16 items-center">
             {/* Content Section */}
             <div className="space-y-4 sm:space-y-5 lg:space-y-6 text-center lg:text-left order-1">
               <div className="space-y-3 sm:space-y-4 animate-fade-in-up">
                 <p className="text-xs sm:text-sm text-accent uppercase tracking-wider font-medium">
-                  Dr. Márcio Pelegrina • CRO [CROSP]
+                  Dr. Márcio Pelegrina • CROSP 116495
                 </p>
-                
+
                 <div className="space-y-2">
                   <h1 className="font-kiona text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground leading-[1.1] tracking-tight">
-                    Transforme Seu Sorriso com Excelência
+                    Seu Sorriso Merece Cuidado e Excelência
                   </h1>
                   <p className="text-sm sm:text-base md:text-lg text-foreground/80 font-inter">
-                    Odontologia estética e funcional de alto padrão
+                    Prótese Dentária e Reabilitação Oral com atendimento humano e acolhedor
                   </p>
                 </div>
               </div>
@@ -74,11 +75,12 @@ const Hero = () => {
             <div className="relative animate-fade-in-up order-2" style={{ animationDelay: '0.3s' }}>
               <div className="relative group max-w-sm sm:max-w-md mx-auto lg:max-w-xl">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5 rounded-xl sm:rounded-2xl lg:rounded-3xl" />
-                <div className="relative rounded-xl sm:rounded-2xl lg:rounded-3xl shadow-gold-lg overflow-hidden aspect-square transition-all duration-700 group-hover:scale-[1.02] group-hover:shadow-gold bg-muted/30 flex items-center justify-center">
-                  <div className="text-center space-y-3">
-                    <User className="w-20 h-20 text-muted-foreground/40 mx-auto" />
-                    <p className="text-sm text-muted-foreground/60 font-inter">Foto do Doutor</p>
-                  </div>
+                <div className="relative rounded-xl sm:rounded-2xl lg:rounded-3xl shadow-gold-lg overflow-hidden aspect-[3/4] transition-all duration-700 group-hover:scale-[1.02] group-hover:shadow-gold">
+                  <img
+                    src={drMarcioHero}
+                    alt="Dr. Márcio Pelegrina - Cirurgião-Dentista"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div className="absolute inset-0 rounded-xl sm:rounded-2xl lg:rounded-3xl ring-1 ring-primary/20 pointer-events-none" />
               </div>

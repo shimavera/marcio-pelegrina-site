@@ -1,45 +1,46 @@
-import clinica1 from "@/assets/clinica-1.webp";
-import clinica3 from "@/assets/clinica-3.webp";
-import clinica5 from "@/assets/clinica-5.webp";
-import clinica8 from "@/assets/clinica-8.webp";
-import clinica9 from "@/assets/clinica-9.webp";
-import clinica11 from "@/assets/clinica-11.webp";
+import { ScrollReveal } from "@/hooks/use-scroll-reveal";
+import interno1 from "@/assets/marcio/consultorio-interno1.webp";
+import interno2 from "@/assets/marcio/consultorio-interno2.webp";
+import interno3 from "@/assets/marcio/consultorio-interno3.webp";
+import interno4 from "@/assets/marcio/consultorio-interno4.webp";
+import fachada from "@/assets/marcio/consultorio-fachada.webp";
+import ext2 from "@/assets/marcio/consultorio-ext2.webp";
 
 const galleryImages = [
   {
-    src: clinica3,
-    alt: "Recepção elegante com iluminação premium",
-    title: "Recepção Premium",
+    src: interno1,
+    alt: "Sala de atendimento com acabamento em madeira e mármore",
+    title: "Sala de Atendimento",
     size: "large",
   },
   {
-    src: clinica5,
-    alt: "Sala de espera confortável com vista panorâmica",
-    title: "Sala de Espera",
+    src: interno3,
+    alt: "Consultório com design moderno e iluminação acolhedora",
+    title: "Consultório",
     size: "large",
   },
   {
-    src: clinica9,
-    alt: "Consultório odontológico com cadeira de última geração",
-    title: "Consultório Moderno",
+    src: interno2,
+    alt: "Ambiente do consultório com detalhes em madeira",
+    title: "Ambiente Premium",
     size: "small",
   },
   {
-    src: clinica11,
-    alt: "Consultório com cadeira odontológica e parede de mármore",
-    title: "Consultório Premium",
+    src: interno4,
+    alt: "Espaço de atendimento com acabamento sofisticado",
+    title: "Espaço de Atendimento",
     size: "small",
   },
   {
-    src: clinica1,
-    alt: "Porta de entrada do consultório",
-    title: "Entrada do Consultório",
+    src: fachada,
+    alt: "Fachada da Klinikí Odontologia",
+    title: "Fachada",
     size: "small",
   },
   {
-    src: clinica8,
-    alt: "Área de esterilização com equipamentos modernos",
-    title: "Área de Esterilização",
+    src: ext2,
+    alt: "Vista externa do consultório",
+    title: "Vista Externa",
     size: "small",
   },
 ];
@@ -49,9 +50,10 @@ const ClinicCarousel = () => {
   const smallImages = galleryImages.filter((img) => img.size === "small");
 
   return (
-    <section className="py-8 lg:py-12" style={{ backgroundColor: '#F6F5F5' }}>
+    <section className="py-16 lg:py-24 bg-secondary">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12 animate-fade-in-up">
+        <ScrollReveal animation="fade-up">
+        <div className="text-center mb-12">
           <p className="text-accent font-inter text-sm uppercase tracking-wider mb-3 inline-block px-4 py-2 rounded-full border border-accent/30 bg-accent/5">
             Nossa Clínica
           </p>
@@ -62,7 +64,9 @@ const ClinicCarousel = () => {
             Conheça nosso espaço moderno e confortável, projetado para sua melhor experiência
           </p>
         </div>
+        </ScrollReveal>
 
+        <ScrollReveal animation="scale-in" delay={200}>
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
             {largeImages.map((image, index) => (
@@ -104,6 +108,7 @@ const ClinicCarousel = () => {
             ))}
           </div>
         </div>
+        </ScrollReveal>
       </div>
     </section>
   );

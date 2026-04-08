@@ -19,17 +19,17 @@ const Footer = () => {
               Dr. Márcio Pelegrina
             </span>
             <p className="text-muted-foreground font-inter text-sm leading-relaxed max-w-xs">
-              Odontologia Avançada com foco em Estética Dental e Endodontia. 
-              Especialista em lentes dentais e reabilitação do sorriso.
+              Especialista em Prótese Dentária e Reabilitação Oral.
+              Atendimento humano, acolhedor e de excelência.
             </p>
             <div className="text-muted-foreground/70 font-inter text-xs space-y-1">
-              <p className="font-semibold text-foreground">[ENDEREÇO]</p>
-              <p>[CIDADE] – [ESTADO], [CEP]</p>
+              <p className="font-semibold text-foreground">Rua Turiassu, 578</p>
+              <p>Perdizes – São Paulo, SP - 05005-000</p>
               <p className="mt-2 flex items-center gap-1.5">
                 <MessageCircle className="w-3.5 h-3.5 text-foreground" />
-                <span className="font-semibold text-foreground">WhatsApp:</span> [TELEFONE]
+                <span className="font-semibold text-foreground">WhatsApp:</span> (19) 97413-5932
               </p>
-              <p className="mt-2 text-accent font-semibold">Segunda a Sexta, das 9h às 18h</p>
+              <p className="mt-2 text-accent font-semibold">Segunda a Sexta, das 08h às 19h</p>
             </div>
           </div>
 
@@ -38,19 +38,19 @@ const Footer = () => {
             <h3 className="text-foreground font-semibold text-lg font-inter">Tratamentos</h3>
             <ul className="flex flex-col gap-3">
               <li>
-                <span className="text-muted-foreground text-sm font-inter">Lentes em Resina</span>
+                <span className="text-muted-foreground text-sm font-inter">Reabilitação Oral</span>
               </li>
               <li>
-                <span className="text-muted-foreground text-sm font-inter">Lentes em Porcelana</span>
+                <span className="text-muted-foreground text-sm font-inter">Lentes de Contato Dental</span>
               </li>
               <li>
                 <span className="text-muted-foreground text-sm font-inter">Clareamento Dental</span>
               </li>
               <li>
-                <span className="text-muted-foreground text-sm font-inter">Tratamento de Canal</span>
+                <span className="text-muted-foreground text-sm font-inter">Implantodontia</span>
               </li>
               <li>
-                <span className="text-muted-foreground text-sm font-inter">Gengivectomia</span>
+                <span className="text-muted-foreground text-sm font-inter">Prótese Dentária</span>
               </li>
               <li>
                 <Link to="/servicos" className="text-accent hover:text-accent/80 transition-colors duration-300 text-sm font-inter font-semibold">
@@ -130,10 +130,11 @@ const Footer = () => {
             <div className="flex flex-col gap-3">
               <h3 className="text-foreground font-semibold text-sm font-inter">Redes Sociais</h3>
               <div className="flex items-center gap-3">
-                <a 
-                  href="#" 
-                  onClick={trackWorkingLead}
-                  aria-label="WhatsApp" 
+                <a
+                  href="https://wa.me/5519974135932"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="WhatsApp"
                   className="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 hover:bg-primary/20 text-primary transition-all duration-300"
                 >
                   <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
@@ -156,8 +157,8 @@ const Footer = () => {
         <div className="border-t border-border/30 py-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 items-center gap-4">
             <div className="text-muted-foreground font-inter text-xs text-center lg:text-left">
-              <p className="font-semibold text-foreground">Dr. Márcio Pelegrina - Odontologia Avançada</p>
-              <p className="mt-1">CRO: [CROSP]</p>
+              <p className="font-semibold text-foreground">Dr. Márcio Pelegrina - Prótese Dentária e Reabilitação Oral</p>
+              <p className="mt-1">CROSP: 116495</p>
             </div>
             
             {/* SP3 Logo - Centered */}

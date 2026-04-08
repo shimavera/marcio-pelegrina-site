@@ -113,8 +113,8 @@ const Especialidade = () => {
                   +2.000 Sorrisos Renovados
                 </h3>
                 <p className="text-muted-foreground font-inter text-base md:text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
-                  Dr. Luan Maciel oferece atendimento personalizado no Jardim Anália Franco, 
-                  com foco em naturalidade, segurança e resultados excepcionais.
+                  Dr. Márcio Pelegrina oferece atendimento personalizado em Perdizes, São Paulo,
+                  com foco em humanização, segurança e resultados excepcionais.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link to="/servicos">
@@ -123,7 +123,7 @@ const Especialidade = () => {
                       <ArrowUpRight className="w-5 h-5" />
                     </button>
                   </Link>
-                  <a href="https://api.whatsapp.com/send/?phone=5511983385832&text=Ol%C3%A1%21+Acabei+de+visitar+seu+site.+Pode+me+passar+mais+informa%C3%A7%C3%B5es%3F&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" onClick={handleWhatsAppClick}>
+                  <a href="https://wa.me/5519974135932?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta" target="_blank" rel="noopener noreferrer" onClick={handleWhatsAppClick}>
                     <button className="px-8 py-4 bg-primary hover:bg-primary/90 text-primary-foreground font-inter font-semibold text-base rounded-lg transition-all duration-300 hover-lift shadow-gold flex items-center gap-2 w-full sm:w-auto justify-center">
                       Agendar Consulta
                       <ArrowUpRight className="w-5 h-5" />

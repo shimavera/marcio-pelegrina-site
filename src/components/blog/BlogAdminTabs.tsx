@@ -363,7 +363,7 @@ const BlogAdminTabs = ({
             id="cta-text"
             value={formData.cta_text || ""}
             onChange={(e) => setFormData({ ...formData, cta_text: e.target.value })}
-            placeholder="Agende sua avaliação com o Dr. Luan Maciel"
+            placeholder="Agende sua avaliação com o Dr. Márcio Pelegrina"
           />
         </div>
 
@@ -373,7 +373,7 @@ const BlogAdminTabs = ({
             id="cta-url"
             value={formData.cta_url || ""}
             onChange={(e) => setFormData({ ...formData, cta_url: e.target.value })}
-            placeholder="https://api.whatsapp.com/send?phone=5511983385832&text=Ol%C3%A1%20vim%20do%20site.%20Quero%20mais%20informa%C3%A7%C3%B5es."
+            placeholder="https://wa.me/5519974135932?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta"
           />
         </div>
 

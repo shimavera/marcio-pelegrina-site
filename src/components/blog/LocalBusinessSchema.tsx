@@ -37,7 +37,7 @@ const LocalBusinessSchema = ({ location, rating }: LocalBusinessSchemaProps) => 
         streetAddress: location.address,
         addressLocality: location.city,
         addressRegion: location.state,
-        postalCode: location.postalCode || '03336-000',
+        postalCode: location.postalCode || '05005-000',
         addressCountry: 'BR',
       },
       geo: {
@@ -49,8 +49,8 @@ const LocalBusinessSchema = ({ location, rating }: LocalBusinessSchemaProps) => 
         {
           '@type': 'OpeningHoursSpecification',
           dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-          opens: '09:00',
-          closes: '18:00',
+          opens: '08:00',
+          closes: '19:00',
         },
       ],
       areaServed: location.areaServed?.map(area => ({
