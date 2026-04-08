@@ -340,7 +340,7 @@ const TreatmentDetail = () => {
                           <Phone className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
                           <div>
                             <div className="font-medium text-foreground">Telefone</div>
-                            <div className="text-muted-foreground">(11) 98338-5832</div>
+                            <div className="text-muted-foreground">[TELEFONE]</div>
                           </div>
                         </div>
                         <Separator />
