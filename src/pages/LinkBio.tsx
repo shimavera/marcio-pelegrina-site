@@ -1,22 +1,18 @@
-import { Share2 } from "lucide-react";
+import { Share2, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 import { IoMdGlobe } from "react-icons/io";
 
-// Import images
-import drLuanMicroscopio from "@/assets/dr-luan-microscopio.webp";
-import drLuanMacielLogo from "@/assets/dr-luan-maciel-logo-new.webp";
-
 const LinkBio = () => {
   const handleWhatsAppClick = () => {
-    window.open('https://api.whatsapp.com/send/?phone=5511983385832&text=Ol%C3%A1%21+Acabei+de+visitar+seu+site.+Pode+me+passar+mais+informa%C3%A7%C3%B5es%3F&type=phone_number&app_absent=0', '_blank');
+    window.open('#', '_blank');
   };
 
   const handleShare = async () => {
     if (navigator.share) {
       try {
         await navigator.share({
-          title: 'Dr. Luan Maciel - Odontologia Avançada',
+          title: 'Dr. Márcio Pelegrina - Odontologia Avançada',
           text: 'Especialista em Lentes Dentais e Endodontia',
           url: window.location.href
         });
@@ -32,23 +28,20 @@ const LinkBio = () => {
         
         {/* Header com Background */}
         <div className="relative mb-20 -mx-4 -mt-8">
-          <div className="h-48 overflow-hidden relative">
-            <img 
-              src={drLuanMicroscopio}
-              alt="Dr. Luan Maciel - Odontologia Avançada"
-              className="w-full h-full object-cover"
-            />
+          <div className="h-48 overflow-hidden relative bg-muted/30">
+            <div className="w-full h-full flex items-center justify-center">
+              <p className="text-sm text-muted-foreground/60 font-inter">Foto de Capa</p>
+            </div>
             <div className="absolute inset-0 bg-black/30" />
           </div>
           
-          {/* Logo - metade dentro, metade fora */}
+          {/* Logo placeholder */}
           <div className="absolute left-1/2 -translate-x-1/2 -bottom-16">
             <div className="w-32 h-32 rounded-full bg-background shadow-xl overflow-hidden hover:scale-105 transition-transform duration-300 flex items-center justify-center p-2">
-              <img 
-                src={drLuanMacielLogo}
-                alt="Dr. Luan Maciel - Odontologia Avançada"
-                className="w-full h-full object-contain"
-              />
+              <div className="text-center">
+                <User className="w-12 h-12 text-muted-foreground/40 mx-auto" />
+                <p className="text-[8px] text-muted-foreground/60">Logo</p>
+              </div>
             </div>
           </div>
         </div>
@@ -56,10 +49,10 @@ const LinkBio = () => {
         <div className="px-2">
           {/* Description */}
           <h1 className="text-center text-foreground mb-1 font-medium text-sm">
-            Dr. Luan Maciel - Odontologia Avançada
+            Dr. Márcio Pelegrina - Odontologia Avançada
           </h1>
           <p className="text-center text-muted-foreground mb-6 text-xs">
-            Especialista em Lentes Dentais e Endodontia. +2.000 sorrisos renovados no Jardim Anália Franco, São Paulo.
+            Especialista em Lentes Dentais e Endodontia. [CIDADE], [ESTADO].
           </p>
 
           {/* Action Buttons */}
@@ -75,7 +68,7 @@ const LinkBio = () => {
             </button>
 
             <a 
-              href="https://drluanmaciel.com"
+              href="#"
               target="_blank" 
               rel="noopener noreferrer" 
               className="block group"
@@ -90,7 +83,7 @@ const LinkBio = () => {
           {/* Social Media Icons */}
           <div className="flex justify-center gap-8 mb-6">
             <a 
-              href="https://www.instagram.com/drluanmaciel" 
+              href="#" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-3xl text-muted-foreground hover:text-[#E4405F] hover:scale-110 transition-all duration-300"

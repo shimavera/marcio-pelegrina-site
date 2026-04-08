@@ -1,5 +1,4 @@
-import { GraduationCap, Award, Heart } from "lucide-react";
-import drLuanMicroscopio from "@/assets/dr-luan-microscopio.webp";
+import { GraduationCap, Award, Heart, User } from "lucide-react";
 import lentesIcon from "@/assets/lentes-icon.png";
 
 const AboutLenses = () => {
@@ -13,7 +12,7 @@ const AboutLenses = () => {
           <div className="text-center space-y-4 mb-12">
             <div className="inline-block">
               <span className="text-accent font-inter text-sm uppercase tracking-wider px-4 py-2 rounded-full border border-accent/30 bg-accent/5">
-                CROSP 158810
+                CRO [CROSP]
               </span>
             </div>
             <h2 className="text-4xl md:text-5xl font-kiona text-foreground font-bold">
@@ -58,12 +57,11 @@ const AboutLenses = () => {
                 </ul>
               </div>
               <div className="md:w-64 lg:w-80 flex-shrink-0">
-                <div className="aspect-square">
-                  <img 
-                    src={drLuanMicroscopio} 
-                    alt="Dr. Luan Maciel utilizando microscópio odontológico" 
-                    className="w-full h-full object-cover rounded-xl shadow-lg"
-                  />
+                <div className="aspect-square bg-muted/30 rounded-xl shadow-lg flex items-center justify-center">
+                  <div className="text-center space-y-2">
+                    <User className="w-16 h-16 text-muted-foreground/40 mx-auto" />
+                    <p className="text-xs text-muted-foreground/60 font-inter">Foto do Doutor</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -99,7 +97,7 @@ const AboutLenses = () => {
                 </div>
               </div>
               <p className="text-foreground/80 font-inter text-sm md:text-base leading-relaxed">
-                Consultório no <strong>Jardim Anália Franco</strong>, São Paulo. Atendimento personalizado com foco em conforto, previsibilidade e acompanhamento completo.
+                Consultório em <strong>[CIDADE]</strong>. Atendimento personalizado com foco em conforto, previsibilidade e acompanhamento completo.
               </p>
             </div>
           </div>
@@ -119,7 +117,6 @@ const AboutLenses = () => {
                   <li>✓ Planejamento técnico e estético detalhado</li>
                   <li>✓ Foco em naturalidade e segurança</li>
                   <li>✓ Experiência do paciente: conforto e previsibilidade</li>
-                  <li>✓ +2.000 sorrisos renovados</li>
                 </ul>
               </div>
             </div>
