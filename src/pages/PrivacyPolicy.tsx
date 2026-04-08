@@ -41,7 +41,7 @@ const PrivacyPolicy = () => {
               {/* Introduction */}
               <div className="mb-12 p-6 bg-accent/5 border border-accent/20 rounded-lg">
                 <p className="text-foreground font-inter leading-relaxed">
-                  O <strong>Dr. Luan Maciel - Odontologia Avançada</strong> está comprometido com a proteção da privacidade e dos dados pessoais de seus pacientes e visitantes. Esta Política de Privacidade descreve como coletamos, usamos, armazenamos e protegemos suas informações pessoais, em conformidade com a <strong>Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018)</strong> e demais legislações aplicáveis.
+                  O <strong>Dr. Márcio Pelegrina - Odontologia Avançada</strong> está comprometido com a proteção da privacidade e dos dados pessoais de seus pacientes e visitantes. Esta Política de Privacidade descreve como coletamos, usamos, armazenamos e protegemos suas informações pessoais, em conformidade com a <strong>Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018)</strong> e demais legislações aplicáveis.
                 </p>
               </div>
 
