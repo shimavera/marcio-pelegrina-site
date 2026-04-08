@@ -26,8 +26,8 @@ const LocalBusinessSchema = ({ location, rating }: LocalBusinessSchemaProps) => 
     const schema = {
       '@context': 'https://schema.org',
       '@type': 'Dentist',
-      name: `Dr. Luan Maciel - ${location.name}`,
-      image: `${window.location.origin}/dr-luan-maciel-logo.webp`,
+      name: `Dr. Márcio Pelegrina - ${location.name}`,
+      image: `${window.location.origin}/logo.webp`,
       '@id': location.url || window.location.origin,
       url: location.url || window.location.origin,
       telephone: location.telephone,

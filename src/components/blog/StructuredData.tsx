@@ -18,7 +18,6 @@ export const ArticleStructuredData = ({
   url,
 }: ArticleStructuredDataProps) => {
   useEffect(() => {
-    // Calculate word count from description as approximation
     const wordCount = description.split(/\s+/).length;
     
     const script = document.createElement('script');
@@ -45,10 +44,10 @@ export const ArticleStructuredData = ({
       },
       publisher: {
         '@type': 'Organization',
-        name: 'Dr. Luan Maciel - Odontologia Avançada',
+        name: 'Dr. Márcio Pelegrina - Odontologia Avançada',
         logo: {
           '@type': 'ImageObject',
-          url: `${window.location.origin}/dr-luan-maciel-logo.webp`,
+          url: `${window.location.origin}/logo.webp`,
           width: 600,
           height: 60,
         },

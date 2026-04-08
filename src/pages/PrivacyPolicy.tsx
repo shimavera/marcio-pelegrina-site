@@ -308,15 +308,15 @@ const PrivacyPolicy = () => {
                     Para dúvidas sobre esta Política de Privacidade ou para exercer seus direitos sob a LGPD, entre em contato:
                   </p>
                   <div className="mt-6 p-6 bg-accent/5 border border-accent/20 rounded-lg space-y-3">
-                    <p className="text-foreground font-semibold text-lg">Dr. Luan Maciel - Odontologia Avançada</p>
+                    <p className="text-foreground font-semibold text-lg">Dr. Márcio Pelegrina - Odontologia Avançada</p>
                     <p className="text-muted-foreground">
-                      <strong>CROSP:</strong> 158810
+                      <strong>CRO:</strong> [CROSP]
                     </p>
                     <p className="text-muted-foreground">
-                      <strong>Endereço:</strong> R. Emília Marengo, 1040 - Jardim Anália Franco, São Paulo - SP, 03336-000
+                      <strong>Endereço:</strong> [ENDEREÇO] - [CIDADE], [ESTADO], [CEP]
                     </p>
                     <p className="text-muted-foreground">
-                      <strong>WhatsApp:</strong> (11) 98338-5832
+                      <strong>WhatsApp:</strong> [TELEFONE]
                     </p>
                     <p className="text-muted-foreground">
                       <strong>Horário:</strong> Segunda a Sexta, das 9h às 18h
