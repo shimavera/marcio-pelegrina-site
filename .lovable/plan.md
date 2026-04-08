@@ -1,40 +1,53 @@
 
 
-## Barra de Avisos Rotativa no Topo do Site
+# Plano: Rebranding para Dr. Márcio Pelegrina
 
-Criar uma barra de avisos fixa no topo da página (acima do header), com mensagens que rotacionam automaticamente, em estilo premium e discreto.
+Substituir toda a identidade do Dr. Luan Maciel pelo Dr. Márcio Pelegrina. Imagens do doutor ficarão como placeholders vazios. Informações desconhecidas (CROSP, endereço, telefone, redes sociais) ficarão com textos-modelo identificáveis como `[CROSP]`, `[ENDEREÇO]`, `[TELEFONE]`, etc.
 
-### Mensagens rotativas
+## Alterações por arquivo
 
-1. "Atendimento exclusivamente particular"
-2. "Não aceitamos convênios odontológicos"
-3. "No momento, não estamos aceitando novos currículos"
+### Componentes principais
+- **Header.tsx** — Remover import da logo, usar texto "Dr. Márcio Pelegrina" estilizado; WhatsApp link → `#` com texto `[TELEFONE]`
+- **Footer.tsx** — Remover logo, trocar nome, links sociais → `#` com labels `[INSTAGRAM]`, `[TIKTOK]`
+- **Hero.tsx** — Remover foto do doutor, colocar div placeholder cinza com ícone User; trocar textos para "Dr. Márcio Pelegrina"
+- **AboutLenses.tsx** — Remover foto microscópio, placeholder cinza; trocar nome
+- **WhatsAppButton.tsx** — Link → `#`, manter botão visível
+- **AnnouncementBar.tsx** — Trocar nome e telefone por `[TELEFONE]`
 
-### Implementação
+### Páginas
+- **Doctors.tsx** — Remover foto, placeholder cinza; trocar nome, CROSP → `[CROSP]`, descrições genéricas mantendo estrutura
+- **LinkBio.tsx** — Remover logo/foto, trocar nome e links sociais por placeholders
+- **Auth.tsx / BlogAdmin.tsx** — Remover logo, texto "Dr. Márcio Pelegrina"
+- **TreatmentDetail.tsx** — Remover foto, placeholder
+- **Unidades.tsx** — Nome → "Dr. Márcio Pelegrina", endereço → `[ENDEREÇO]`, telefone → `[TELEFONE]`, mapa → placeholder
+- **PrivacyPolicy.tsx** — Trocar nome e CROSP
+- **Index.tsx** — Verificar referências ao nome
 
-**Novo componente `src/components/AnnouncementBar.tsx`**
-- Barra fina fixada no topo (acima do header)
-- Fundo escuro (`bg-foreground text-background`) para destaque
-- Altura compacta (~32px)
-- Mensagens rotacionam a cada 4 segundos com animação de fade
-- Botão de fechar (X) opcional para dispensar
+### SEO e Metadata
+- **index.html** — Title, meta description, OG tags → "Dr. Márcio Pelegrina" com dados genéricos
+- **SEOHead.tsx / StructuredData.tsx / LocalBusinessSchema.tsx** — Trocar nome, endereço e dados por placeholders
+- **robots.txt / sitemap.xml** — Atualizar domínio se referenciado
 
-**Ajustes no layout**
-- `src/components/Header.tsx`: adicionar `top` offset para acomodar a barra (ex: `top-8` quando a barra está visível)
-- `src/pages/Index.tsx`: incluir o `<AnnouncementBar />` antes do `<Header />`
-- `src/components/Hero.tsx`: ajustar `pt` se necessário para compensar a barra extra
+### Edge Functions
+- **rss/index.ts, generate-post-content/index.ts, analyze-content-gaps/index.ts** — Trocar referências ao nome
 
-### Estilo visual
+### Componentes auxiliares
+- **ClinicCarousel.tsx** — Trocar alt texts
+- **Contact.tsx** — Trocar telefone/nome se presente
 
-- Fundo escuro sólido com texto claro, tipografia pequena (`text-xs sm:text-sm`)
-- Transição suave entre mensagens (fade in/out)
-- Ícone sutil ao lado de cada mensagem (ex: `AlertTriangle` para convênios, `Info` para currículos)
-- Tracking espaçado e uppercase para sofisticação
+## Padrão de placeholders
+| Info faltante | Placeholder |
+|---|---|
+| CROSP | `[CROSP]` |
+| Telefone | `[TELEFONE]` |
+| Endereço | `[ENDEREÇO]` |
+| Instagram | `[INSTAGRAM]` |
+| TikTok | `[TIKTOK]` |
+| Email | `[EMAIL]` |
+| Especialidade | Manter "Odontologia" genérico |
 
-### Detalhes técnicos
-
-- `useState` + `useEffect` com `setInterval` para rotação automática
-- Animação CSS de fade entre mensagens
-- `z-[60]` para ficar acima do header (`z-50`)
-- Componente reutilizável, importado apenas na Index (ou globalmente se desejado)
+## Imagens
+- Todas as fotos do doutor → div cinza claro com ícone de usuário e texto "Foto do Doutor"
+- Logo → texto estilizado com fonte do projeto
+- Fotos de clínica/casos → mantidas (são genéricas)
 
