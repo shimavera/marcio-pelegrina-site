@@ -226,7 +226,7 @@ const TreatmentDetail = () => {
                           <Award className="w-5 h-5 text-primary" />
                         </div>
                         <h2 className="font-kiona text-xl md:text-2xl font-bold text-foreground">
-                          Sobre o Dr. Luan Maciel
+                          Sobre o Dr. Márcio Pelegrina
                         </h2>
                       </div>
                       <Separator className="mb-4" />
