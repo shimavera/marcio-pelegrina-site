@@ -46,7 +46,7 @@ const WebVitals = () => {
 
     const reportMetric = async (metric: WebVitalsMetric) => {
       // Log to console in development
-      if (process.env.NODE_ENV === 'development') {
+      if (import.meta.env.DEV) {
         console.log(`[Web Vitals] ${metric.name}:`, metric.value, metric.rating);
       }
 
