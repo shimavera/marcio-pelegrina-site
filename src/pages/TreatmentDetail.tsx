@@ -423,9 +423,9 @@ const TreatmentDetail = () => {
                         className="border-primary text-primary hover:bg-primary/5 w-full sm:w-auto"
                         asChild
                       >
-                        <a href="tel:+5511983385832">
+                      <a href="tel:[TELEFONE]">
                           <Phone className="w-4 h-4 mr-2" />
-                          (11) 98338-5832
+                          [TELEFONE]
                         </a>
                       </Button>
                     </div>
