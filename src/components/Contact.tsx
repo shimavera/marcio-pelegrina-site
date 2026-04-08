@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { MessageCircle, MapPin, Phone, ShieldCheck } from "lucide-react";
+import { MessageCircle, MapPin, ShieldCheck } from "lucide-react";
 import { trackWorkingLead } from "@/lib/utils";
 
 const Contact = () => {

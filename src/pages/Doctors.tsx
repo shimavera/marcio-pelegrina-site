@@ -1,8 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { GraduationCap, Award, Sparkles, Heart } from "lucide-react";
-import drLuanMicroscopio from "@/assets/dr-luan-microscopio.webp";
+import { GraduationCap, Award, Sparkles, Heart, User } from "lucide-react";
 
 const Doctors = () => {
   return (
@@ -16,11 +15,11 @@ const Doctors = () => {
               <div className="text-center md:text-left animate-fade-in space-y-6">
                 <div>
                   <span className="text-accent font-inter text-sm uppercase tracking-wider px-4 py-2 rounded-full border border-accent/30 bg-accent/5 inline-block mb-4">
-                    CROSP 158810
+                    CRO [CROSP]
                   </span>
                 </div>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary font-kiona">
-                  Dr. Luan Maciel
+                  Dr. Márcio Pelegrina
                 </h1>
                 <p className="text-lg md:text-xl text-foreground/80 leading-relaxed">
                   Cirurgião-Dentista especializado em <span className="text-primary font-semibold">Estética Dental</span> e 
@@ -28,17 +27,16 @@ const Doctors = () => {
                 </p>
                 <p className="text-base text-muted-foreground">
                   Profissional dedicado à excelência no atendimento, com foco em lentes dentais e tratamento de canal. 
-                  Atendimento personalizado no Jardim Anália Franco, São Paulo.
+                  Atendimento personalizado em [CIDADE].
                 </p>
               </div>
               
               <div className="relative animate-fade-in">
-                <div className="relative rounded-2xl overflow-hidden shadow-2xl hover-lift">
-                  <img 
-                    src={drLuanMicroscopio} 
-                    alt="Dr. Luan Maciel - Odontologia Avançada" 
-                    className="w-full h-auto object-cover"
-                  />
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl hover-lift bg-muted/30 aspect-square flex items-center justify-center">
+                  <div className="text-center space-y-3">
+                    <User className="w-24 h-24 text-muted-foreground/40 mx-auto" />
+                    <p className="text-sm text-muted-foreground/60 font-inter">Foto do Doutor</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -60,15 +58,15 @@ const Doctors = () => {
             <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 max-w-4xl mx-auto animate-fade-in-up">
               <Card className="border-primary/20 hover-lift">
                 <CardContent className="p-6 text-center">
-                  <div className="text-3xl md:text-4xl font-bold text-primary mb-2">+2000</div>
-                  <div className="text-sm text-muted-foreground">Sorrisos Renovados</div>
+                  <div className="text-3xl md:text-4xl font-bold text-primary mb-2">Lentes</div>
+                  <div className="text-sm text-muted-foreground">Resina e Porcelana</div>
                 </CardContent>
               </Card>
               
               <Card className="border-accent/20 hover-lift">
                 <CardContent className="p-6 text-center">
-                  <div className="text-3xl md:text-4xl font-bold text-accent mb-2">Lentes</div>
-                  <div className="text-sm text-muted-foreground">Resina e Porcelana</div>
+                  <div className="text-3xl md:text-4xl font-bold text-accent mb-2">Estética</div>
+                  <div className="text-sm text-muted-foreground">Dental Avançada</div>
                 </CardContent>
               </Card>
               
@@ -235,11 +233,11 @@ const Doctors = () => {
                       </li>
                       <li className="flex items-start gap-3">
                         <span className="text-accent mt-1">✓</span>
-                        <span className="text-foreground/80">Localização privilegiada no Jardim Anália Franco</span>
+                        <span className="text-foreground/80">Localização privilegiada em [CIDADE]</span>
                       </li>
                       <li className="flex items-start gap-3">
                         <span className="text-accent mt-1">✓</span>
-                        <span className="text-foreground/80">+2.000 sorrisos renovados</span>
+                        <span className="text-foreground/80">Tecnologia de ponta em odontologia</span>
                       </li>
                     </ul>
                   </div>

@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
-import drLuanMacielLogo from "@/assets/dr-luan-logo-login.webp";
 import { ArrowLeft } from "lucide-react";
 import { InputOTP, InputOTPGroup, InputOTPSlot } from "@/components/ui/input-otp";
 
@@ -24,19 +23,14 @@ const Auth = () => {
 
   const handleAuth = async (pinValue: string) => {
     setLoading(true);
-
-    // Simulate a small delay for UX
     await new Promise(resolve => setTimeout(resolve, 500));
 
     if (pinValue === CORRECT_PIN) {
-      // Store authentication in sessionStorage
       sessionStorage.setItem("admin_authenticated", "true");
-      
       toast({
         title: "Acesso autorizado!",
         description: "Redirecionando para o painel...",
       });
-      
       navigate("/admin/blog");
     } else {
       toast({
@@ -46,7 +40,6 @@ const Auth = () => {
       });
       setPin("");
     }
-    
     setLoading(false);
   };
 
@@ -65,7 +58,7 @@ const Auth = () => {
       <Card className="w-full max-w-md relative z-10 shadow-lg border-border/50">
         <CardHeader className="space-y-4 px-4 sm:px-6 pt-6 sm:pt-8">
           <div className="flex justify-center mb-2 sm:mb-4">
-            <img src={drLuanMacielLogo} alt="Dr. Luan Maciel - Odontologia Avançada" className="h-12 sm:h-16 w-auto max-w-[280px] sm:max-w-[320px]" />
+            <span className="font-kiona text-xl font-bold text-foreground">Dr. Márcio Pelegrina</span>
           </div>
           <CardTitle className="text-xl sm:text-2xl text-center font-kiona text-foreground">
             Acesso ao Sistema
