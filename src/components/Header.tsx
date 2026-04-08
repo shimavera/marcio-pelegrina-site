@@ -50,7 +50,7 @@ const Header = () => {
 
           {/* CTA Button - Right (Desktop) */}
           <div className="hidden lg:flex flex-col items-center">
-            <Button className="hover-lift shadow-gold bg-gradient-gold hover:opacity-90" asChild>
+            <Button className="hover-lift bg-[#25D366] hover:bg-[#1fb855] text-white shadow-[0_6px_20px_rgba(37,211,102,0.3)]" asChild>
               <a href="https://wa.me/5519974135932?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta" target="_blank" rel="noopener noreferrer" onClick={handleWhatsAppClick}>
                 Agendar Consulta
               </a>
@@ -82,7 +82,7 @@ const Header = () => {
                     {item.name}
                   </Link>
                 ))}
-                <Button className="hover-lift shadow-gold bg-gradient-gold hover:opacity-90 w-full" asChild>
+                <Button className="hover-lift bg-[#25D366] hover:bg-[#1fb855] text-white shadow-[0_6px_20px_rgba(37,211,102,0.3)] w-full" asChild>
                   <a href="https://wa.me/5519974135932?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta" target="_blank" rel="noopener noreferrer" onClick={() => { setIsOpen(false); handleWhatsAppClick(); }}>
                     Agendar Consulta
                   </a>

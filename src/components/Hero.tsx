@@ -32,7 +32,7 @@ const Hero = () => {
                     Seu Sorriso Merece Cuidado e Excelência
                   </h1>
                   <p className="text-sm sm:text-base md:text-lg text-foreground/80 font-inter">
-                    Prótese Dentária e Reabilitação Oral com atendimento humano e acolhedor
+                    Odontologia de Alta Performance com atendimento humano e acolhedor
                   </p>
                 </div>
               </div>
@@ -51,9 +51,9 @@ const Hero = () => {
 
               {/* CTA Button */}
               <div className="flex flex-col items-center lg:items-start gap-2 animate-fade-in-up pt-1" style={{ animationDelay: '0.25s' }}>
-                <Button 
-                  size="lg" 
-                  className="hover-lift shadow-gold bg-gradient-gold hover:opacity-90 text-sm sm:text-base font-medium h-12 sm:h-14 px-6 sm:px-8 w-full sm:w-auto max-w-xs sm:max-w-none" 
+                <Button
+                  size="lg"
+                  className="hover-lift text-sm sm:text-base font-semibold h-12 sm:h-14 px-6 sm:px-8 w-full sm:w-auto max-w-xs sm:max-w-none bg-[#25D366] hover:bg-[#1fb855] text-white shadow-[0_8px_30px_rgba(37,211,102,0.35)]"
                   asChild
                 >
                   <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" onClick={handleWhatsAppClick}>

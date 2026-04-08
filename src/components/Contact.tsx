@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { MessageCircle, MapPin, ShieldCheck } from "lucide-react";
 import { ScrollReveal } from "@/hooks/use-scroll-reveal";
 import { trackWorkingLead } from "@/lib/utils";
+import drMarcioAtendimento2 from "@/assets/marcio/dr-marcio-atendimento2.webp";
 
 const Contact = () => {
   const whatsappUrl = "https://wa.me/5519974135932?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta";
@@ -16,21 +17,55 @@ const Contact = () => {
       <div className="absolute top-0 left-0 w-[700px] h-[700px] bg-gradient-gold opacity-5 blur-[120px] rounded-full" />
       
       <div className="container mx-auto px-4 relative z-10">
-        {/* Title and Description */}
+        {/* CTA com foto do Dr. Márcio */}
         <ScrollReveal animation="fade-up">
-        <div className="text-center space-y-6 mb-16">
-          <div className="space-y-4">
-            <p className="text-accent font-inter text-sm uppercase tracking-wider inline-block px-4 py-2 rounded-full border border-accent/30 bg-accent/5">
-              Entre em Contato
-            </p>
-            <h2 className="font-kiona text-4xl md:text-5xl lg:text-6xl font-bold text-foreground">
-              Agende sua Consulta
-            </h2>
+        <div className="bg-primary rounded-3xl overflow-hidden mb-16 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-[1fr,auto] items-center">
+            <div className="p-8 md:p-12 text-center md:text-left space-y-5">
+              <p className="text-primary-foreground/60 font-inter text-sm uppercase tracking-[0.2em]">
+                O próximo passo é seu
+              </p>
+              <h2 className="font-kiona text-3xl md:text-4xl font-bold text-primary-foreground leading-tight">
+                Estou te esperando para agendar sua avaliação
+              </h2>
+              <p className="text-primary-foreground/70 font-inter text-base leading-relaxed">
+                Converse diretamente comigo pelo WhatsApp. Sem compromisso, sem fila de espera.
+              </p>
+              <Button
+                size="lg"
+                className="bg-[#25D366] hover:bg-[#1fb855] text-white font-semibold h-14 px-8 shadow-[0_8px_30px_rgba(37,211,102,0.4)] hover-lift text-base"
+                asChild
+              >
+                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" onClick={handleWhatsAppClick}>
+                  <MessageCircle className="w-5 h-5" />
+                  Falar com o Dr. Márcio
+                </a>
+              </Button>
+              <p className="flex items-center justify-center md:justify-start gap-1 text-xs text-primary-foreground/50 tracking-wide">
+                <ShieldCheck className="w-3 h-3" />
+                Canal exclusivo para pacientes e agendamentos
+              </p>
+            </div>
+            <div className="hidden md:block w-64 lg:w-72">
+              <img
+                src={drMarcioAtendimento2}
+                alt="Dr. Márcio Pelegrina"
+                className="w-full h-full object-cover min-h-[350px]"
+              />
+            </div>
           </div>
+        </div>
+        </ScrollReveal>
 
-          <p className="text-muted-foreground font-inter text-lg leading-relaxed max-w-3xl mx-auto">
-            Entre em contato e agende sua consulta com o Dr. Márcio Pelegrina
+        {/* Contato */}
+        <ScrollReveal animation="fade-up" delay={100}>
+        <div className="text-center space-y-4 mb-12">
+          <p className="text-accent font-inter text-sm uppercase tracking-[0.2em] inline-block px-4 py-2 rounded-full border border-accent/30 bg-accent/5">
+            Localização
           </p>
+          <h2 className="font-kiona text-3xl md:text-4xl font-bold text-foreground">
+            Onde Estamos
+          </h2>
         </div>
         </ScrollReveal>
 
@@ -83,9 +118,9 @@ const Contact = () => {
             </div>
 
             <div className="flex flex-col items-center lg:items-start pt-4 gap-2">
-              <Button 
-                size="lg" 
-                className="hover-lift shadow-gold bg-gradient-gold hover:opacity-90 text-primary-foreground text-xs sm:text-sm font-medium h-10 sm:h-12 px-5 sm:px-6 w-full sm:w-auto max-w-xs sm:max-w-none" 
+              <Button
+                size="lg"
+                className="hover-lift bg-[#25D366] hover:bg-[#1fb855] text-white font-semibold text-xs sm:text-sm h-10 sm:h-12 px-5 sm:px-6 w-full sm:w-auto max-w-xs sm:max-w-none shadow-[0_6px_20px_rgba(37,211,102,0.3)]"
                 asChild
               >
                 <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" onClick={handleWhatsAppClick}>
