@@ -15,6 +15,7 @@ const Header = () => {
     { name: "Quem Sou", path: "/doutores" },
     { name: "Especialidade", path: "/especialidade" },
     { name: "Tratamentos", path: "/servicos" },
+    { name: "Galeria", path: "/galeria" },
     { name: "Blog", path: "/blog" }
   ];
 

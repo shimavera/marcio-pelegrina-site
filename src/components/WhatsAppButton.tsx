@@ -50,7 +50,7 @@ const WhatsAppButton = () => {
     <>
       {/* Popup mensagem */}
       {showPopup && !dismissed && (
-        <div className="fixed bottom-24 right-4 z-50 animate-fade-in-up max-w-[280px]">
+        <div className="fixed bottom-6 right-20 z-50 animate-fade-in-up max-w-[280px]">
           <div className="bg-white rounded-2xl shadow-2xl border border-border/50 overflow-hidden">
             <div className="bg-[#075E54] px-4 py-3 flex items-center gap-3">
               <img
