@@ -12,6 +12,7 @@ import 'swiper/css/effect-coverflow';
 // @ts-ignore
 import 'swiper/css/pagination';
 
+// Casos originais
 import caso01 from '@/assets/marcio/casos/caso-01.webp';
 import caso02 from '@/assets/marcio/casos/caso-02.webp';
 import caso03 from '@/assets/marcio/casos/caso-03.webp';
@@ -27,13 +28,106 @@ import caso12 from '@/assets/marcio/casos/caso-12.webp';
 import caso13 from '@/assets/marcio/casos/caso-13.webp';
 import caso14 from '@/assets/marcio/casos/caso-14.webp';
 
+// Casos novos - WhatsApp
+import novo01 from '@/assets/marcio/casos-novos/novo-01.webp';
+import novo02 from '@/assets/marcio/casos-novos/novo-02.webp';
+import novo03 from '@/assets/marcio/casos-novos/novo-03.webp';
+import novo04 from '@/assets/marcio/casos-novos/novo-04.webp';
+import novo05 from '@/assets/marcio/casos-novos/novo-05.webp';
+import novo06 from '@/assets/marcio/casos-novos/novo-06.webp';
+import novo07 from '@/assets/marcio/casos-novos/novo-07.webp';
+import novo08 from '@/assets/marcio/casos-novos/novo-08.webp';
+import novo09 from '@/assets/marcio/casos-novos/novo-09.webp';
+import novo10 from '@/assets/marcio/casos-novos/novo-10.webp';
+import novo11 from '@/assets/marcio/casos-novos/novo-11.webp';
+import novo12 from '@/assets/marcio/casos-novos/novo-12.webp';
+import novo13 from '@/assets/marcio/casos-novos/novo-13.webp';
+import novo14 from '@/assets/marcio/casos-novos/novo-14.webp';
+import novo15 from '@/assets/marcio/casos-novos/novo-15.webp';
+import novo16 from '@/assets/marcio/casos-novos/novo-16.webp';
+import novo17 from '@/assets/marcio/casos-novos/novo-17.webp';
+import novo18 from '@/assets/marcio/casos-novos/novo-18.webp';
+import novo19 from '@/assets/marcio/casos-novos/novo-19.webp';
+import novo20 from '@/assets/marcio/casos-novos/novo-20.webp';
+import novo21 from '@/assets/marcio/casos-novos/novo-21.webp';
+import novo22 from '@/assets/marcio/casos-novos/novo-22.webp';
+import novo23 from '@/assets/marcio/casos-novos/novo-23.webp';
+import novo24 from '@/assets/marcio/casos-novos/novo-24.webp';
+import novo25 from '@/assets/marcio/casos-novos/novo-25.webp';
+import novo26 from '@/assets/marcio/casos-novos/novo-26.webp';
+import novo27 from '@/assets/marcio/casos-novos/novo-27.webp';
+import novo28 from '@/assets/marcio/casos-novos/novo-28.webp';
+import novo29 from '@/assets/marcio/casos-novos/novo-29.webp';
+import novo30 from '@/assets/marcio/casos-novos/novo-30.webp';
+import novo31 from '@/assets/marcio/casos-novos/novo-31.webp';
+import novo32 from '@/assets/marcio/casos-novos/novo-32.webp';
+import novo33 from '@/assets/marcio/casos-novos/novo-33.webp';
+import novo34 from '@/assets/marcio/casos-novos/novo-34.webp';
+import novo35 from '@/assets/marcio/casos-novos/novo-35.webp';
+import novo36 from '@/assets/marcio/casos-novos/novo-36.webp';
+import novo37 from '@/assets/marcio/casos-novos/novo-37.webp';
+import novo38 from '@/assets/marcio/casos-novos/novo-38.webp';
+import novo39 from '@/assets/marcio/casos-novos/novo-39.webp';
+import novo40 from '@/assets/marcio/casos-novos/novo-40.webp';
+import novo41 from '@/assets/marcio/casos-novos/novo-41.webp';
+import novo42 from '@/assets/marcio/casos-novos/novo-42.webp';
+import novo43 from '@/assets/marcio/casos-novos/novo-43.webp';
+import novo44 from '@/assets/marcio/casos-novos/novo-44.webp';
+
+// Casos Instagram
+import insta01 from '@/assets/marcio/casos-novos/insta-01.webp';
+import insta02 from '@/assets/marcio/casos-novos/insta-02.webp';
+import insta03 from '@/assets/marcio/casos-novos/insta-03.webp';
+import insta04 from '@/assets/marcio/casos-novos/insta-04.webp';
+import insta05 from '@/assets/marcio/casos-novos/insta-05.webp';
+import insta06 from '@/assets/marcio/casos-novos/insta-06.webp';
+import insta07 from '@/assets/marcio/casos-novos/insta-07.webp';
+import insta08 from '@/assets/marcio/casos-novos/insta-08.webp';
+import insta09 from '@/assets/marcio/casos-novos/insta-09.webp';
+import insta10 from '@/assets/marcio/casos-novos/insta-10.webp';
+import insta11 from '@/assets/marcio/casos-novos/insta-11.webp';
+import insta12 from '@/assets/marcio/casos-novos/insta-12.webp';
+import insta13 from '@/assets/marcio/casos-novos/insta-13.webp';
+import insta14 from '@/assets/marcio/casos-novos/insta-14.webp';
+
 const caseImages = [
+  // Novos em destaque primeiro
+  { src: novo01, alt: 'Caso clínico - resultado' },
+  { src: insta01, alt: 'Reabilitação oral - antes e depois' },
+  { src: novo03, alt: 'Transformação do sorriso' },
+  { src: insta03, alt: 'Reabilitação estética - antes e depois' },
+  { src: novo08, alt: 'Caso clínico - resultado estético' },
+  { src: insta04, alt: 'Sorriso transformado' },
+  { src: novo11, alt: 'Reabilitação oral completa' },
+  { src: insta05, alt: 'Resultado de tratamento' },
+  { src: novo14, alt: 'Caso clínico - sorriso' },
+  { src: insta06, alt: 'Reabilitação oral - caso clínico' },
+  { src: novo18, alt: 'Transformação estética' },
+  { src: insta08, alt: 'Resultado estético dental' },
+  // Originais
   { src: caso01, alt: 'Reabilitação oral completa - antes e depois' },
   { src: caso08, alt: 'Lentes de contato dental - antes e depois' },
   { src: caso13, alt: 'Reabilitação estética - antes e depois' },
   { src: caso05, alt: 'Transformação do sorriso - antes e depois' },
   { src: caso12, alt: 'Reabilitação oral feminina - antes e depois' },
   { src: caso11, alt: 'Prótese dentária - antes e depois' },
+  // Mais novos
+  { src: novo21, alt: 'Caso clínico novo' },
+  { src: insta09, alt: 'Resultado dental' },
+  { src: novo24, alt: 'Reabilitação oral' },
+  { src: insta10, alt: 'Caso estético dental' },
+  { src: novo27, alt: 'Transformação do sorriso' },
+  { src: insta11, alt: 'Resultado de reabilitação' },
+  { src: novo30, alt: 'Caso clínico - resultado' },
+  { src: insta12, alt: 'Reabilitação completa' },
+  { src: novo33, alt: 'Sorriso transformado' },
+  { src: insta13, alt: 'Caso estético' },
+  { src: novo36, alt: 'Resultado dental' },
+  { src: insta14, alt: 'Reabilitação oral final' },
+  { src: novo39, alt: 'Caso clínico' },
+  { src: novo42, alt: 'Resultado estético' },
+  { src: novo44, alt: 'Transformação final' },
+  // Restantes originais
   { src: caso06, alt: 'Restauração estética - antes e depois' },
   { src: caso09, alt: 'Caso clínico de reabilitação' },
   { src: caso14, alt: 'Resultado de tratamento estético' },
@@ -42,6 +136,38 @@ const caseImages = [
   { src: caso07, alt: 'Restauração dental' },
   { src: caso04, alt: 'Caso clínico de restauração' },
   { src: caso10, alt: 'Reabilitação oral' },
+  // Restantes novos
+  { src: novo02, alt: 'Caso novo 2' },
+  { src: novo04, alt: 'Caso novo 4' },
+  { src: novo05, alt: 'Caso novo 5' },
+  { src: novo06, alt: 'Caso novo 6' },
+  { src: novo07, alt: 'Caso novo 7' },
+  { src: novo09, alt: 'Caso novo 9' },
+  { src: novo10, alt: 'Caso novo 10' },
+  { src: novo12, alt: 'Caso novo 12' },
+  { src: novo13, alt: 'Caso novo 13' },
+  { src: novo15, alt: 'Caso novo 15' },
+  { src: novo16, alt: 'Caso novo 16' },
+  { src: novo17, alt: 'Caso novo 17' },
+  { src: novo19, alt: 'Caso novo 19' },
+  { src: novo20, alt: 'Caso novo 20' },
+  { src: novo22, alt: 'Caso novo 22' },
+  { src: novo23, alt: 'Caso novo 23' },
+  { src: novo25, alt: 'Caso novo 25' },
+  { src: novo26, alt: 'Caso novo 26' },
+  { src: novo28, alt: 'Caso novo 28' },
+  { src: novo29, alt: 'Caso novo 29' },
+  { src: novo31, alt: 'Caso novo 31' },
+  { src: novo32, alt: 'Caso novo 32' },
+  { src: novo34, alt: 'Caso novo 34' },
+  { src: novo35, alt: 'Caso novo 35' },
+  { src: novo37, alt: 'Caso novo 37' },
+  { src: novo38, alt: 'Caso novo 38' },
+  { src: novo40, alt: 'Caso novo 40' },
+  { src: novo41, alt: 'Caso novo 41' },
+  { src: novo43, alt: 'Caso novo 43' },
+  { src: insta02, alt: 'Caso Instagram 2' },
+  { src: insta07, alt: 'Caso Instagram 7' },
 ];
 
 const CasesGallery = () => {

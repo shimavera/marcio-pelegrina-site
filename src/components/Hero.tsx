@@ -1,5 +1,5 @@
 import { MessageCircle, Star, ShieldCheck } from "lucide-react";
-import drMarcioHero from "@/assets/marcio/dr-marcio-hero.webp";
+import drMarcioHero from "@/assets/marcio/dr-marcio-hero-color.webp";
 import { Button } from "@/components/ui/button";
 import { trackWorkingLead } from "@/lib/utils";
 
