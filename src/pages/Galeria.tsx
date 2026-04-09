@@ -3,21 +3,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { X, ChevronLeft, ChevronRight, ZoomIn } from "lucide-react";
 
-// Casos originais
-import caso01 from '@/assets/marcio/casos/caso-01.webp';
-import caso02 from '@/assets/marcio/casos/caso-02.webp';
-import caso03 from '@/assets/marcio/casos/caso-03.webp';
-import caso04 from '@/assets/marcio/casos/caso-04.webp';
-import caso05 from '@/assets/marcio/casos/caso-05.webp';
-import caso06 from '@/assets/marcio/casos/caso-06.webp';
-import caso07 from '@/assets/marcio/casos/caso-07.webp';
+// caso-08 único não coberto pelas imagens do Instagram
 import caso08 from '@/assets/marcio/casos/caso-08.webp';
-import caso09 from '@/assets/marcio/casos/caso-09.webp';
-import caso10 from '@/assets/marcio/casos/caso-10.webp';
-import caso11 from '@/assets/marcio/casos/caso-11.webp';
-import caso12 from '@/assets/marcio/casos/caso-12.webp';
-import caso13 from '@/assets/marcio/casos/caso-13.webp';
-import caso14 from '@/assets/marcio/casos/caso-14.webp';
 
 // Casos novos — 1 representativo por caso (sem duplicatas)
 import novo03 from '@/assets/marcio/casos-novos/novo-03.webp';
@@ -51,12 +38,11 @@ const allImages = [
   // Instagram (compostos antes/depois com marca PELEGRINA)
   insta01, insta02, insta03, insta04, insta05, insta06, insta07,
   insta09, insta10, insta11, insta12, insta13, insta14,
-  // Casos novos (1 por caso)
+  // Casos novos (1 representativo por caso)
   novo03, novo08, novo10, novo14, novo18, novo21,
   novo25, novo28, novo31, novo34, novo38,
-  // Casos originais
-  caso01, caso02, caso03, caso04, caso05, caso06, caso07,
-  caso08, caso09, caso10, caso11, caso12, caso13, caso14,
+  // caso-08 único sem equivalente no Instagram
+  caso08,
 ];
 
 const Galeria = () => {
