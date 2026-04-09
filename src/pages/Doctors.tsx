@@ -121,6 +121,18 @@ const Doctors = () => {
                         <strong>Experiência:</strong> Mais de 10 anos de atuação clínica
                       </p>
                     </div>
+                    <div className="flex items-start gap-3">
+                      <span className="text-accent mt-1 font-bold">•</span>
+                      <p className="text-foreground/80">
+                        Diversos cursos e atualizações em <strong>oclusão, dentística</strong> e <strong>reabilitação oral</strong>
+                      </p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <span className="text-accent mt-1 font-bold">•</span>
+                      <p className="text-foreground/80">
+                        Formado em <strong>Fotografia</strong>
+                      </p>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
@@ -246,6 +258,26 @@ const Doctors = () => {
                 </CardContent>
               </Card>
             </div>
+          </div>
+        </section>
+
+        {/* CTA */}
+        <section className="py-12 md:py-16 bg-gradient-to-br from-primary/5 via-background to-accent/5">
+          <div className="container mx-auto max-w-3xl px-4 text-center">
+            <h2 className="font-kiona text-2xl md:text-3xl text-foreground mb-3 uppercase tracking-wide">
+              Agende sua Avaliação
+            </h2>
+            <p className="text-muted-foreground mb-8 text-lg max-w-xl mx-auto">
+              Converse com o Dr. Márcio e descubra o tratamento ideal para transformar o seu sorriso.
+            </p>
+            <a
+              href="https://wa.me/5519974135932?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1fb855] text-white font-semibold px-8 py-4 rounded-xl transition-all duration-300 shadow-[0_8px_30px_rgba(37,211,102,0.35)] hover:shadow-[0_12px_40px_rgba(37,211,102,0.45)] hover:-translate-y-0.5 text-lg"
+            >
+              Agendar Avaliação Gratuita
+            </a>
           </div>
         </section>
       </main>
