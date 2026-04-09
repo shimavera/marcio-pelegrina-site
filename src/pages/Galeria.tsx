@@ -58,11 +58,7 @@ import novo35 from '@/assets/marcio/casos-novos/novo-35.webp';
 import novo36 from '@/assets/marcio/casos-novos/novo-36.webp';
 import novo37 from '@/assets/marcio/casos-novos/novo-37.webp';
 import novo38 from '@/assets/marcio/casos-novos/novo-38.webp';
-import novo39 from '@/assets/marcio/casos-novos/novo-39.webp';
-import novo40 from '@/assets/marcio/casos-novos/novo-40.webp';
-import novo41 from '@/assets/marcio/casos-novos/novo-41.webp';
 import novo42 from '@/assets/marcio/casos-novos/novo-42.webp';
-import novo43 from '@/assets/marcio/casos-novos/novo-43.webp';
 import novo44 from '@/assets/marcio/casos-novos/novo-44.webp';
 
 // Instagram
@@ -73,7 +69,6 @@ import insta04 from '@/assets/marcio/casos-novos/insta-04.webp';
 import insta05 from '@/assets/marcio/casos-novos/insta-05.webp';
 import insta06 from '@/assets/marcio/casos-novos/insta-06.webp';
 import insta07 from '@/assets/marcio/casos-novos/insta-07.webp';
-import insta08 from '@/assets/marcio/casos-novos/insta-08.webp';
 import insta09 from '@/assets/marcio/casos-novos/insta-09.webp';
 import insta10 from '@/assets/marcio/casos-novos/insta-10.webp';
 import insta11 from '@/assets/marcio/casos-novos/insta-11.webp';
@@ -88,11 +83,10 @@ const allImages = [
   novo15, novo16, novo17, novo18, novo19, novo20, novo21,
   novo22, novo23, novo24, novo25, novo26, novo27, novo28,
   novo29, novo30, novo31, novo32, novo33, novo34, novo35,
-  novo36, novo37, novo38, novo39, novo40, novo41, novo42,
-  novo43, novo44,
+  novo36, novo37, novo38, novo42, novo44,
   // Instagram
   insta01, insta02, insta03, insta04, insta05, insta06, insta07,
-  insta08, insta09, insta10, insta11, insta12, insta13, insta14,
+  insta09, insta10, insta11, insta12, insta13, insta14,
   // Originais
   caso01, caso02, caso03, caso04, caso05, caso06, caso07,
   caso08, caso09, caso10, caso11, caso12, caso13, caso14,

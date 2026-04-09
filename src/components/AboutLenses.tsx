@@ -59,6 +59,14 @@ const AboutLenses = () => {
                     <span className="text-accent mt-1">•</span>
                     <span>Mais de <strong>10 anos</strong> de experiência clínica</span>
                   </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-accent mt-1">•</span>
+                    <span>Diversos cursos e atualizações em <strong>oclusão, dentística</strong> e <strong>reabilitação oral</strong></span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-accent mt-1">•</span>
+                    <span>Formado em <strong>Fotografia</strong></span>
+                  </li>
                 </ul>
               </div>
               <div className="md:w-64 lg:w-80 flex-shrink-0">

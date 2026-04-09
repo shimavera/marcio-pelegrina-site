@@ -67,11 +67,7 @@ import novo35 from '@/assets/marcio/casos-novos/novo-35.webp';
 import novo36 from '@/assets/marcio/casos-novos/novo-36.webp';
 import novo37 from '@/assets/marcio/casos-novos/novo-37.webp';
 import novo38 from '@/assets/marcio/casos-novos/novo-38.webp';
-import novo39 from '@/assets/marcio/casos-novos/novo-39.webp';
-import novo40 from '@/assets/marcio/casos-novos/novo-40.webp';
-import novo41 from '@/assets/marcio/casos-novos/novo-41.webp';
 import novo42 from '@/assets/marcio/casos-novos/novo-42.webp';
-import novo43 from '@/assets/marcio/casos-novos/novo-43.webp';
 import novo44 from '@/assets/marcio/casos-novos/novo-44.webp';
 
 // Casos Instagram
@@ -82,7 +78,6 @@ import insta04 from '@/assets/marcio/casos-novos/insta-04.webp';
 import insta05 from '@/assets/marcio/casos-novos/insta-05.webp';
 import insta06 from '@/assets/marcio/casos-novos/insta-06.webp';
 import insta07 from '@/assets/marcio/casos-novos/insta-07.webp';
-import insta08 from '@/assets/marcio/casos-novos/insta-08.webp';
 import insta09 from '@/assets/marcio/casos-novos/insta-09.webp';
 import insta10 from '@/assets/marcio/casos-novos/insta-10.webp';
 import insta11 from '@/assets/marcio/casos-novos/insta-11.webp';
@@ -103,7 +98,6 @@ const caseImages = [
   { src: novo14, alt: 'Caso clínico - sorriso' },
   { src: insta06, alt: 'Reabilitação oral - caso clínico' },
   { src: novo18, alt: 'Transformação estética' },
-  { src: insta08, alt: 'Resultado estético dental' },
   // Originais
   { src: caso01, alt: 'Reabilitação oral completa - antes e depois' },
   { src: caso08, alt: 'Lentes de contato dental - antes e depois' },
@@ -124,7 +118,6 @@ const caseImages = [
   { src: insta13, alt: 'Caso estético' },
   { src: novo36, alt: 'Resultado dental' },
   { src: insta14, alt: 'Reabilitação oral final' },
-  { src: novo39, alt: 'Caso clínico' },
   { src: novo42, alt: 'Resultado estético' },
   { src: novo44, alt: 'Transformação final' },
   // Restantes originais
@@ -163,9 +156,6 @@ const caseImages = [
   { src: novo35, alt: 'Caso novo 35' },
   { src: novo37, alt: 'Caso novo 37' },
   { src: novo38, alt: 'Caso novo 38' },
-  { src: novo40, alt: 'Caso novo 40' },
-  { src: novo41, alt: 'Caso novo 41' },
-  { src: novo43, alt: 'Caso novo 43' },
   { src: insta02, alt: 'Caso Instagram 2' },
   { src: insta07, alt: 'Caso Instagram 7' },
 ];
