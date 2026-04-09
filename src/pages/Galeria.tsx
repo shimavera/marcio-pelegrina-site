@@ -58,8 +58,6 @@ import novo35 from '@/assets/marcio/casos-novos/novo-35.webp';
 import novo36 from '@/assets/marcio/casos-novos/novo-36.webp';
 import novo37 from '@/assets/marcio/casos-novos/novo-37.webp';
 import novo38 from '@/assets/marcio/casos-novos/novo-38.webp';
-import novo42 from '@/assets/marcio/casos-novos/novo-42.webp';
-import novo44 from '@/assets/marcio/casos-novos/novo-44.webp';
 
 // Instagram
 import insta01 from '@/assets/marcio/casos-novos/insta-01.webp';
@@ -83,7 +81,7 @@ const allImages = [
   novo15, novo16, novo17, novo18, novo19, novo20, novo21,
   novo22, novo23, novo24, novo25, novo26, novo27, novo28,
   novo29, novo30, novo31, novo32, novo33, novo34, novo35,
-  novo36, novo37, novo38, novo42, novo44,
+  novo36, novo37, novo38,
   // Instagram
   insta01, insta02, insta03, insta04, insta05, insta06, insta07,
   insta09, insta10, insta11, insta12, insta13, insta14,

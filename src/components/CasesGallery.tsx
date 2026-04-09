@@ -67,8 +67,6 @@ import novo35 from '@/assets/marcio/casos-novos/novo-35.webp';
 import novo36 from '@/assets/marcio/casos-novos/novo-36.webp';
 import novo37 from '@/assets/marcio/casos-novos/novo-37.webp';
 import novo38 from '@/assets/marcio/casos-novos/novo-38.webp';
-import novo42 from '@/assets/marcio/casos-novos/novo-42.webp';
-import novo44 from '@/assets/marcio/casos-novos/novo-44.webp';
 
 // Casos Instagram
 import insta01 from '@/assets/marcio/casos-novos/insta-01.webp';
@@ -118,8 +116,6 @@ const caseImages = [
   { src: insta13, alt: 'Caso estético' },
   { src: novo36, alt: 'Resultado dental' },
   { src: insta14, alt: 'Reabilitação oral final' },
-  { src: novo42, alt: 'Resultado estético' },
-  { src: novo44, alt: 'Transformação final' },
   // Restantes originais
   { src: caso06, alt: 'Restauração estética - antes e depois' },
   { src: caso09, alt: 'Caso clínico de reabilitação' },
