@@ -39,7 +39,6 @@ import novo07 from '@/assets/marcio/casos-novos/novo-07.webp';
 import novo08 from '@/assets/marcio/casos-novos/novo-08.webp';
 import novo09 from '@/assets/marcio/casos-novos/novo-09.webp';
 import novo10 from '@/assets/marcio/casos-novos/novo-10.webp';
-import novo11 from '@/assets/marcio/casos-novos/novo-11.webp';
 import novo12 from '@/assets/marcio/casos-novos/novo-12.webp';
 import novo13 from '@/assets/marcio/casos-novos/novo-13.webp';
 import novo14 from '@/assets/marcio/casos-novos/novo-14.webp';
@@ -91,7 +90,6 @@ const caseImages = [
   { src: insta03, alt: 'Reabilitação estética - antes e depois' },
   { src: novo08, alt: 'Caso clínico - resultado estético' },
   { src: insta04, alt: 'Sorriso transformado' },
-  { src: novo11, alt: 'Reabilitação oral completa' },
   { src: insta05, alt: 'Resultado de tratamento' },
   { src: novo14, alt: 'Caso clínico - sorriso' },
   { src: insta06, alt: 'Reabilitação oral - caso clínico' },

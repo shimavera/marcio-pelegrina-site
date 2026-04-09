@@ -2,7 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { GraduationCap, Award, Sparkles, Heart } from "lucide-react";
-import drMarcioMesa from "@/assets/marcio/dr-marcio-mesa.webp";
+import drMarcioMesa from "@/assets/marcio/dr-marcio-camera.webp";
 
 const Doctors = () => {
   return (

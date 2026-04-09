@@ -19,44 +19,17 @@ import caso12 from '@/assets/marcio/casos/caso-12.webp';
 import caso13 from '@/assets/marcio/casos/caso-13.webp';
 import caso14 from '@/assets/marcio/casos/caso-14.webp';
 
-// Casos novos
-import novo01 from '@/assets/marcio/casos-novos/novo-01.webp';
-import novo02 from '@/assets/marcio/casos-novos/novo-02.webp';
+// Casos novos — 1 representativo por caso (sem duplicatas)
 import novo03 from '@/assets/marcio/casos-novos/novo-03.webp';
-import novo04 from '@/assets/marcio/casos-novos/novo-04.webp';
-import novo05 from '@/assets/marcio/casos-novos/novo-05.webp';
-import novo06 from '@/assets/marcio/casos-novos/novo-06.webp';
-import novo07 from '@/assets/marcio/casos-novos/novo-07.webp';
 import novo08 from '@/assets/marcio/casos-novos/novo-08.webp';
-import novo09 from '@/assets/marcio/casos-novos/novo-09.webp';
 import novo10 from '@/assets/marcio/casos-novos/novo-10.webp';
-import novo11 from '@/assets/marcio/casos-novos/novo-11.webp';
-import novo12 from '@/assets/marcio/casos-novos/novo-12.webp';
-import novo13 from '@/assets/marcio/casos-novos/novo-13.webp';
 import novo14 from '@/assets/marcio/casos-novos/novo-14.webp';
-import novo15 from '@/assets/marcio/casos-novos/novo-15.webp';
-import novo16 from '@/assets/marcio/casos-novos/novo-16.webp';
-import novo17 from '@/assets/marcio/casos-novos/novo-17.webp';
 import novo18 from '@/assets/marcio/casos-novos/novo-18.webp';
-import novo19 from '@/assets/marcio/casos-novos/novo-19.webp';
-import novo20 from '@/assets/marcio/casos-novos/novo-20.webp';
 import novo21 from '@/assets/marcio/casos-novos/novo-21.webp';
-import novo22 from '@/assets/marcio/casos-novos/novo-22.webp';
-import novo23 from '@/assets/marcio/casos-novos/novo-23.webp';
-import novo24 from '@/assets/marcio/casos-novos/novo-24.webp';
 import novo25 from '@/assets/marcio/casos-novos/novo-25.webp';
-import novo26 from '@/assets/marcio/casos-novos/novo-26.webp';
-import novo27 from '@/assets/marcio/casos-novos/novo-27.webp';
 import novo28 from '@/assets/marcio/casos-novos/novo-28.webp';
-import novo29 from '@/assets/marcio/casos-novos/novo-29.webp';
-import novo30 from '@/assets/marcio/casos-novos/novo-30.webp';
 import novo31 from '@/assets/marcio/casos-novos/novo-31.webp';
-import novo32 from '@/assets/marcio/casos-novos/novo-32.webp';
-import novo33 from '@/assets/marcio/casos-novos/novo-33.webp';
 import novo34 from '@/assets/marcio/casos-novos/novo-34.webp';
-import novo35 from '@/assets/marcio/casos-novos/novo-35.webp';
-import novo36 from '@/assets/marcio/casos-novos/novo-36.webp';
-import novo37 from '@/assets/marcio/casos-novos/novo-37.webp';
 import novo38 from '@/assets/marcio/casos-novos/novo-38.webp';
 
 // Instagram
@@ -75,17 +48,13 @@ import insta13 from '@/assets/marcio/casos-novos/insta-13.webp';
 import insta14 from '@/assets/marcio/casos-novos/insta-14.webp';
 
 const allImages = [
-  // Novos em destaque
-  novo01, novo02, novo03, novo04, novo05, novo06, novo07,
-  novo08, novo09, novo10, novo11, novo12, novo13, novo14,
-  novo15, novo16, novo17, novo18, novo19, novo20, novo21,
-  novo22, novo23, novo24, novo25, novo26, novo27, novo28,
-  novo29, novo30, novo31, novo32, novo33, novo34, novo35,
-  novo36, novo37, novo38,
-  // Instagram
+  // Instagram (compostos antes/depois com marca PELEGRINA)
   insta01, insta02, insta03, insta04, insta05, insta06, insta07,
   insta09, insta10, insta11, insta12, insta13, insta14,
-  // Originais
+  // Casos novos (1 por caso)
+  novo03, novo08, novo10, novo14, novo18, novo21,
+  novo25, novo28, novo31, novo34, novo38,
+  // Casos originais
   caso01, caso02, caso03, caso04, caso05, caso06, caso07,
   caso08, caso09, caso10, caso11, caso12, caso13, caso14,
 ];
