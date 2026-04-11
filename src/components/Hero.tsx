@@ -1,7 +1,8 @@
-import { MessageCircle, Star, ShieldCheck } from "lucide-react";
+import { Star, ShieldCheck } from "lucide-react";
 import drMarcioHero from "@/assets/marcio/dr-marcio-hero-color.webp";
 import { Button } from "@/components/ui/button";
 import { trackWorkingLead } from "@/lib/utils";
+import { WhatsAppIcon } from "@/components/icons/WhatsAppIcon";
 
 const Hero = () => {
   const whatsappUrl = "https://wa.me/5519974135932?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o";
@@ -57,7 +58,7 @@ const Hero = () => {
                   asChild
                 >
                   <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" onClick={handleWhatsAppClick}>
-                    <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5" />
+                    <WhatsAppIcon className="w-4 h-4 sm:w-5 sm:h-5" />
                     Agendar Avaliação
                   </a>
                 </Button>

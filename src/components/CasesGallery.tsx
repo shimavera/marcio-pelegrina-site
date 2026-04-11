@@ -35,7 +35,6 @@ import novo03 from '@/assets/marcio/casos-novos/novo-03.webp';
 import novo04 from '@/assets/marcio/casos-novos/novo-04.webp';
 import novo05 from '@/assets/marcio/casos-novos/novo-05.webp';
 import novo06 from '@/assets/marcio/casos-novos/novo-06.webp';
-import novo07 from '@/assets/marcio/casos-novos/novo-07.webp';
 import novo08 from '@/assets/marcio/casos-novos/novo-08.webp';
 import novo09 from '@/assets/marcio/casos-novos/novo-09.webp';
 import novo10 from '@/assets/marcio/casos-novos/novo-10.webp';
@@ -128,7 +127,6 @@ const caseImages = [
   { src: novo04, alt: 'Caso novo 4' },
   { src: novo05, alt: 'Caso novo 5' },
   { src: novo06, alt: 'Caso novo 6' },
-  { src: novo07, alt: 'Caso novo 7' },
   { src: novo09, alt: 'Caso novo 9' },
   { src: novo10, alt: 'Caso novo 10' },
   { src: novo12, alt: 'Caso novo 12' },

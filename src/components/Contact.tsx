@@ -1,8 +1,9 @@
 import { Button } from "@/components/ui/button";
-import { MessageCircle, MapPin, ShieldCheck } from "lucide-react";
+import { MapPin, ShieldCheck } from "lucide-react";
 import { ScrollReveal } from "@/hooks/use-scroll-reveal";
 import { trackWorkingLead } from "@/lib/utils";
 import drMarcioAtendimento2 from "@/assets/marcio/dr-marcio-atendimento2.webp";
+import { WhatsAppIcon as MessageCircle } from "@/components/icons/WhatsAppIcon";
 
 const Contact = () => {
   const whatsappUrl = "https://wa.me/5519974135932?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta";

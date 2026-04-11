@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
-import { MessageCircle, Instagram } from "lucide-react";
+import { Instagram } from "lucide-react";
 import { trackWorkingLead } from "@/lib/utils";
 import logoFooter from "@/assets/marcio/logo-footer.webp";
+import { WhatsAppIcon as MessageCircle } from "@/components/icons/WhatsAppIcon";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
