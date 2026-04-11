@@ -4,42 +4,42 @@
 
 @layer base {
   :root {
-    /* Paleta PLGRN Premium — Branco Puro + Navy + Dourado */
-    --background: 0 0% 98%;           /* #FAFAFA Branco puro */
-    --foreground: 220 25% 12%;        /* #161D2F Navy escuro */
+    /* Paleta PLGRN Premium — Eerie Black + Beaver + Timberwolf (Brand Pack) */
+    --background: 36 8% 12%;          /* #211F1C Eerie Black */
+    --foreground: 35 21% 84%;         /* #DED7CD Timberwolf */
 
-    --card: 0 0% 100%;
-    --card-foreground: 220 25% 12%;
+    --card: 0 3% 6%;                  /* #0F0E0E Night */
+    --card-foreground: 35 21% 84%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 25% 12%;
+    --popover: 0 3% 6%;
+    --popover-foreground: 35 21% 84%;
 
-    --primary: 220 25% 12%;           /* #161D2F Navy escuro */
-    --primary-foreground: 0 0% 98%;
+    --primary: 33 16% 57%;            /* #A39481 Beaver */
+    --primary-foreground: 36 8% 12%;
 
-    --secondary: 220 15% 93%;         /* #ECEEf3 Cinza azulado */
-    --secondary-foreground: 220 25% 12%;
+    --secondary: 36 8% 18%;           /* Eerie Black mais claro */
+    --secondary-foreground: 35 21% 84%;
 
-    --muted: 220 15% 93%;
-    --muted-foreground: 220 12% 46%;  /* #697490 Cinza médio */
+    --muted: 36 8% 18%;
+    --muted-foreground: 33 14% 65%;   /* Timberwolf escurecido */
 
-    --accent: 38 65% 54%;             /* #C9913A Dourado premium */
-    --accent-foreground: 0 0% 98%;
+    --accent: 33 16% 57%;             /* #A39481 Beaver (dourado fosco) */
+    --accent-foreground: 36 8% 12%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 35 21% 95%;
 
-    --border: 220 15% 88%;
-    --input: 220 15% 88%;
-    --ring: 38 65% 54%;               /* Dourado */
+    --border: 36 8% 22%;
+    --input: 36 8% 22%;
+    --ring: 33 16% 57%;               /* Beaver */
 
     --radius: 0.5rem;
 
-    --gradient-gold: linear-gradient(135deg, hsl(220 25% 12%) 0%, hsl(220 25% 20%) 30%, hsl(38 65% 54%) 60%, hsl(220 25% 20%) 85%, hsl(220 25% 12%) 100%);
-    --gradient-subtle: linear-gradient(135deg, hsl(0 0% 98%), hsl(220 15% 96%));
-    --shadow-gold: 0 10px 40px hsl(38 65% 54% / 0.20);
-    --shadow-gold-lg: 0 20px 60px hsl(38 65% 54% / 0.25);
-    --shadow-elevated: 0 10px 40px hsl(220 25% 12% / 0.10);
+    --gradient-gold: linear-gradient(135deg, hsl(36 8% 12%) 0%, hsl(37 23% 36%) 30%, hsl(33 16% 57%) 60%, hsl(37 23% 36%) 85%, hsl(36 8% 12%) 100%);
+    --gradient-subtle: linear-gradient(135deg, hsl(36 8% 12%), hsl(0 3% 6%));
+    --shadow-gold: 0 10px 40px hsl(33 16% 57% / 0.25);
+    --shadow-gold-lg: 0 20px 60px hsl(33 16% 57% / 0.35);
+    --shadow-elevated: 0 10px 40px hsl(0 0% 0% / 0.40);
 
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
