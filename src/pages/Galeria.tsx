@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { trackWorkingLead } from "@/lib/utils";
 import { X, ChevronLeft, ChevronRight, ZoomIn } from "lucide-react";
 
 // caso-08 único não coberto pelas imagens do Instagram
@@ -127,6 +128,7 @@ const Galeria = () => {
               href="https://wa.me/5519974135932?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={trackWorkingLead}
               className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1fb855] text-white font-semibold px-8 py-4 rounded-xl transition-all duration-300 shadow-[0_8px_30px_rgba(37,211,102,0.35)] hover:shadow-[0_12px_40px_rgba(37,211,102,0.45)] hover:-translate-y-0.5"
             >
               Agendar Avaliação Gratuita
