@@ -14,10 +14,10 @@ const Footer = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 py-12 md:py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10 py-10 md:py-12">
           {/* Brand Section */}
-          <div className="flex flex-col gap-4 items-start">
-            <img src={logoFooter} alt="Márcio Pelegrina - Reabilitação Oral" className="h-12 w-auto" />
+          <div className="flex flex-col gap-3 items-start">
+            <img src={logoFooter} alt="Márcio Pelegrina - Reabilitação Oral" className="h-10 w-auto" />
             <p className="text-muted-foreground font-inter text-sm leading-relaxed max-w-xs">
               Especialista em Prótese Dentária e Reabilitação Oral.
               Atendimento humano, acolhedor e de excelência.
@@ -156,7 +156,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-border/30 py-8">
+        <div className="border-t border-border/30 py-5">
           <div className="grid grid-cols-1 lg:grid-cols-3 items-center gap-4">
             <div className="text-muted-foreground font-inter text-xs text-center lg:text-left">
               <p className="font-semibold text-foreground">Dr. Márcio Pelegrina - Prótese Dentária e Reabilitação Oral</p>
@@ -172,10 +172,10 @@ const Footer = () => {
                 className="transition-opacity hover:opacity-80 duration-300"
                 aria-label="Site Desenvolvido Por SP3"
               >
-                <img 
+                <img
                   src={new URL('../assets/sp3-logo-new.png', import.meta.url).href}
-                  alt="Site Desenvolvido Por SP3" 
-                  className="h-16 w-auto"
+                  alt="Site Desenvolvido Por SP3"
+                  className="h-12 w-auto"
                 />
               </a>
             </div>

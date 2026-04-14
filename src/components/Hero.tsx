@@ -79,8 +79,13 @@ const Hero = () => {
                 <div className="relative rounded-xl sm:rounded-2xl lg:rounded-3xl shadow-gold-lg overflow-hidden aspect-[3/4] transition-all duration-700 group-hover:scale-[1.02] group-hover:shadow-gold">
                   <img
                     src={drMarcioHero}
-                    alt="Dr. Márcio Pelegrina - Cirurgião-Dentista"
+                    alt="Dr. Márcio Pelegrina - Cirurgião-Dentista especialista em Prótese Dentária Perdizes SP"
                     className="w-full h-full object-cover"
+                    width={480}
+                    height={640}
+                    fetchPriority="high"
+                    loading="eager"
+                    decoding="sync"
                   />
                 </div>
                 <div className="absolute inset-0 rounded-xl sm:rounded-2xl lg:rounded-3xl ring-1 ring-primary/20 pointer-events-none" />
