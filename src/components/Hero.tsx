@@ -1,5 +1,4 @@
 import { Star, ShieldCheck } from "lucide-react";
-import drMarcioHero from "@/assets/marcio/dr-marcio-hero-color.webp";
 import { Button } from "@/components/ui/button";
 import { trackWorkingLead } from "@/lib/utils";
 import { WhatsAppIcon } from "@/components/icons/WhatsAppIcon";
@@ -78,11 +77,11 @@ const Hero = () => {
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5 rounded-xl sm:rounded-2xl lg:rounded-3xl" />
                 <div className="relative rounded-xl sm:rounded-2xl lg:rounded-3xl shadow-gold-lg overflow-hidden aspect-[3/4] transition-all duration-700 group-hover:scale-[1.02] group-hover:shadow-gold">
                   <img
-                    src={drMarcioHero}
+                    src="/dr-marcio-hero.webp"
                     alt="Dr. Márcio Pelegrina - Cirurgião-Dentista especialista em Prótese Dentária Perdizes SP"
                     className="w-full h-full object-cover"
-                    width={480}
-                    height={640}
+                    width={900}
+                    height={1600}
                     fetchPriority="high"
                     loading="eager"
                     decoding="sync"
