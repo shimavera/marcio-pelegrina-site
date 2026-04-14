@@ -1,14 +1,12 @@
-import { useRef, useState, useEffect } from 'react';
+import { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCoverflow, Autoplay, Pagination } from 'swiper/modules';
+import { Autoplay, Pagination } from 'swiper/modules';
 import type { Swiper as SwiperType } from 'swiper';
 import { Card } from '@/components/ui/card';
 import { ScrollReveal } from '@/hooks/use-scroll-reveal';
 
 // @ts-ignore
 import 'swiper/css';
-// @ts-ignore
-import 'swiper/css/effect-coverflow';
 // @ts-ignore
 import 'swiper/css/pagination';
 
@@ -157,12 +155,6 @@ const CasesGallery = () => {
   const [currentSlide, setCurrentSlide] = useState(1);
   const totalSlides = caseImages.length;
 
-  useEffect(() => {
-    if (swiperRef.current?.autoplay) {
-      swiperRef.current.autoplay.start();
-    }
-  }, []);
-
   return (
     <section className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4">
@@ -183,55 +175,45 @@ const CasesGallery = () => {
         <ScrollReveal animation="fade-up" delay={200}>
           <div className="cases-swiper-container relative">
             <Swiper
-              onSwiper={(swiper) => {
-                swiperRef.current = swiper;
-              }}
+              onSwiper={(swiper) => { swiperRef.current = swiper; }}
               onSlideChange={(swiper) => {
-                const realIndex = swiper.realIndex % totalSlides;
-                setCurrentSlide(realIndex + 1);
+                setCurrentSlide((swiper.realIndex % totalSlides) + 1);
               }}
-              effect={'coverflow'}
               grabCursor={true}
               centeredSlides={true}
               loop={true}
+              speed={500}
               autoplay={{
                 delay: 3500,
                 disableOnInteraction: false,
                 pauseOnMouseEnter: true,
-              }}
-              coverflowEffect={{
-                rotate: 0,
-                stretch: 0,
-                depth: 100,
-                modifier: 2.5,
-                slideShadows: false,
               }}
               pagination={{
                 clickable: true,
                 dynamicBullets: true,
               }}
               breakpoints={{
-                320: { slidesPerView: 1.2, spaceBetween: 15 },
-                480: { slidesPerView: 1.5, spaceBetween: 20 },
-                640: { slidesPerView: 2, spaceBetween: 25 },
-                768: { slidesPerView: 2.5, spaceBetween: 30 },
-                1024: { slidesPerView: 3, spaceBetween: 35 },
-                1280: { slidesPerView: 3.5, spaceBetween: 40 },
+                320:  { slidesPerView: 1.3, spaceBetween: 12 },
+                480:  { slidesPerView: 1.6, spaceBetween: 16 },
+                640:  { slidesPerView: 2,   spaceBetween: 20 },
+                768:  { slidesPerView: 2.5, spaceBetween: 24 },
+                1024: { slidesPerView: 3,   spaceBetween: 28 },
+                1280: { slidesPerView: 3.5, spaceBetween: 32 },
               }}
-              modules={[EffectCoverflow, Autoplay, Pagination]}
+              modules={[Autoplay, Pagination]}
               className="cases-swiper py-8"
             >
               {caseImages.map((image, index) => (
-                <SwiperSlide key={`case-${index}`} className="cases-slide">
-                  <Card className="overflow-hidden bg-card border-0 shadow-lg group cursor-pointer transition-all duration-500 hover:shadow-xl rounded-2xl">
+                <SwiperSlide key={`case-${index}`}>
+                  <Card className="overflow-hidden bg-card border-0 shadow-lg rounded-2xl">
                     <div className="relative aspect-[4/5] overflow-hidden">
                       <img
                         src={image.src}
                         alt={image.alt}
-                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        className="w-full h-full object-cover"
                         loading="lazy"
+                        decoding="async"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-primary/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                     </div>
                   </Card>
                 </SwiperSlide>
@@ -263,12 +245,6 @@ const CasesGallery = () => {
           background: hsl(var(--accent));
           width: 24px;
           border-radius: 5px;
-        }
-        .cases-slide {
-          transition: all 0.5s ease;
-        }
-        .cases-slide.swiper-slide-active {
-          transform: scale(1.05);
         }
       `}</style>
     </section>

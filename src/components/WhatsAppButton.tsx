@@ -17,9 +17,9 @@ const WhatsAppButton = () => {
       setTimeout(() => setShake(false), 1000);
     }, 10000);
 
-    // Mostrar popup após 12s
+    // Mostrar popup após 12s (apenas se não dispensado)
     const popupTimer = setTimeout(() => {
-      if (!dismissed) setShowPopup(true);
+      setShowPopup((prev) => (dismissed ? prev : true));
     }, 12000);
 
     // Vibrar periodicamente a cada 30s
@@ -33,7 +33,8 @@ const WhatsAppButton = () => {
       clearTimeout(popupTimer);
       clearInterval(interval);
     };
-  }, [dismissed]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const handleClick = () => {
     trackWorkingLead();
