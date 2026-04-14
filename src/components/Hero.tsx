@@ -24,10 +24,13 @@ const Hero = () => {
             <div className="space-y-4 sm:space-y-5 lg:space-y-6 text-center lg:text-left order-1">
               <div className="space-y-3 sm:space-y-4 animate-fade-in-up">
                 <p className="text-xs sm:text-sm text-accent uppercase tracking-[0.2em] font-medium">
-                  PLGRN • CROSP 116495
+                  CROSP 116495
                 </p>
 
                 <div className="space-y-2">
+                  <p className="font-inter text-base sm:text-lg md:text-xl text-foreground/70 font-light tracking-wide">
+                    Dr. Márcio Pelegrina
+                  </p>
                   <h1 className="font-kiona text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground leading-[1.1] tracking-tight">
                     Seu Sorriso Merece Cuidado e Excelência
                   </h1>
