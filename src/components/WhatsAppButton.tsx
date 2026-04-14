@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { X } from "lucide-react";
-import whatsappIcon from "@/assets/whatsapp-icon.png";
+import whatsappIcon from "@/assets/whatsapp-icon.webp";
 import drMarcioAvatar from "@/assets/marcio/dr-marcio-avatar.webp";
 import { trackWorkingLead } from "@/lib/utils";
 

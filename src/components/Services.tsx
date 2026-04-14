@@ -2,8 +2,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowUpRight, CheckCircle2 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ScrollReveal } from "@/hooks/use-scroll-reveal";
-import esteticaIcon from "@/assets/estetica-icon.png";
-import saudeIcon from "@/assets/saude-icon.png";
+import esteticaIcon from "@/assets/estetica-icon.webp";
+import saudeIcon from "@/assets/saude-icon.webp";
 const Services = () => {
   const aestheticServices = ["Reabilitação oral completa", "Lentes de contato dental", "Clareamento dental", "Restaurações estéticas", "Prótese dentária"];
   const healthServices = ["Endodontia (tratamento de canal)", "Periodontia", "Implantodontia", "Extrações", "Placa de bruxismo"];
