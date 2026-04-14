@@ -173,7 +173,7 @@ const Footer = () => {
                 aria-label="Site Desenvolvido Por SP3"
               >
                 <img
-                  src={new URL('../assets/sp3-logo-new.png', import.meta.url).href}
+                  src={new URL('../assets/sp3-logo-new.webp', import.meta.url).href}
                   alt="Site Desenvolvido Por SP3"
                   className="h-12 w-auto"
                 />

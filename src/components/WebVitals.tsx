@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { supabase } from '@/integrations/supabase/client';
+import { supabase, isSupabaseConfigured } from '@/integrations/supabase/client';
 
 interface WebVitalsMetric {
   name: string;
@@ -69,7 +69,8 @@ const WebVitals = () => {
         });
       }
 
-      // Send to Supabase for dashboard analytics
+      // Send to Supabase for dashboard analytics (only if configured)
+      if (!isSupabaseConfigured) return;
       try {
         await (supabase as any).from('web_vitals_analytics').insert({
           metric_name: metric.name,

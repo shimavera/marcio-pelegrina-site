@@ -1,6 +1,6 @@
 import { GraduationCap, Award, Heart } from "lucide-react";
 import { ScrollReveal } from "@/hooks/use-scroll-reveal";
-import lentesIcon from "@/assets/lentes-icon.png";
+import lentesIcon from "@/assets/lentes-icon.webp";
 import drMarcioAtendimento from "@/assets/marcio/dr-marcio-atendimento.webp";
 
 const AboutLenses = () => {
@@ -88,7 +88,7 @@ const AboutLenses = () => {
             <div className="bg-card/50 border border-border/50 rounded-2xl p-6 hover:border-accent/30 transition-all hover-lift">
               <div className="flex items-start gap-4 mb-4">
                 <div className="w-12 h-12 rounded-full bg-gradient-gold flex items-center justify-center flex-shrink-0 shadow-gold">
-                  <img src={lentesIcon} alt="Foco em Estética" className="w-[50px] h-[50px]" />
+                  <img src={lentesIcon} alt="Foco em Estética" className="w-[48px] h-[48px]" width={48} height={48} />
                 </div>
                 <div>
                   <h3 className="font-inter font-semibold text-foreground text-xl">
