@@ -23,6 +23,7 @@ const AnalyticsDashboard = lazy(() => import("./pages/AnalyticsDashboard"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 const LinkBio = lazy(() => import("./pages/LinkBio"));
 const Galeria = lazy(() => import("./pages/Galeria"));
+const Lentes = lazy(() => import("./pages/Lentes"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 const queryClient = new QueryClient();
@@ -49,6 +50,7 @@ const App = () => (
             <Route path="/admin/analytics" element={<AnalyticsDashboard />} />
             <Route path="/politica-privacidade" element={<PrivacyPolicy />} />
             <Route path="/galeria" element={<Galeria />} />
+            <Route path="/lentes" element={<Lentes />} />
             <Route path="/link-bio" element={<LinkBio />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
