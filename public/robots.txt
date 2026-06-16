@@ -13,4 +13,7 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://qqpzmogjakvbkygudxtp.supabase.co/functions/v1/sitemap
+# LP de tráfego pago — não indexar (evita competir com o site no orgânico)
+Disallow: /lentes
+
+Sitemap: https://www.drmarciopelegrina.com.br/sitemap.xml
