@@ -1,13 +1,16 @@
 import { useEffect, useState } from "react";
 import {
-  Star,
   ShieldCheck,
   Sparkles,
   Microscope,
   HeartHandshake,
-  Clock,
+  ClipboardCheck,
+  MonitorSmartphone,
+  Scissors,
+  Smile,
   ChevronDown,
   MapPin,
+  Clock,
 } from "lucide-react";
 import { WhatsAppIcon } from "@/components/icons/WhatsAppIcon";
 import { trackWorkingLead } from "@/lib/utils";
@@ -50,26 +53,49 @@ const cases = [
   { src: "/lentes/caso-4.webp", alt: "Reabilitação oral com lentes de porcelana — antes e depois" },
 ];
 
-const reasons = [
+const steps = [
   {
-    icon: Microscope,
+    icon: ClipboardCheck,
+    title: "Avaliação e diagnóstico",
+    text: "Entendemos o que te incomoda no sorriso e avaliamos o seu caso de perto, sem compromisso.",
+  },
+  {
+    icon: MonitorSmartphone,
     title: "Planejamento digital do sorriso",
     text: "Você vê a prévia do seu novo sorriso antes de começar. Nada é feito no improviso.",
   },
   {
-    icon: Sparkles,
-    title: "Porcelana de alta estética",
-    text: "Lentes finas, naturais e resistentes — brilho que imita o dente real, sem aparência artificial.",
+    icon: Scissors,
+    title: "Preparo minimamente invasivo",
+    text: "Técnica conservadora, preservando ao máximo a estrutura natural do seu dente.",
   },
+  {
+    icon: Smile,
+    title: "Seu novo sorriso",
+    text: "Instalação das lentes de porcelana sob medida — natural, branco e alinhado.",
+  },
+];
+
+const reasons = [
   {
     icon: HeartHandshake,
     title: "Especialista em reabilitação",
     text: "Casos simples ou complexos: dentes desgastados, manchados, separados ou tortos.",
   },
   {
+    icon: MonitorSmartphone,
+    title: "Planejamento digital",
+    text: "Você aprova a prévia do seu sorriso antes de qualquer procedimento.",
+  },
+  {
+    icon: Sparkles,
+    title: "Porcelana de alta estética",
+    text: "Lentes finas e resistentes, com brilho que imita o dente real — sem aparência artificial.",
+  },
+  {
     icon: ShieldCheck,
-    title: "Procedimento seguro e conservador",
-    text: "Técnica minimamente invasiva, respeitando ao máximo a estrutura do seu dente.",
+    title: "Técnica conservadora",
+    text: "Procedimento seguro, respeitando ao máximo a estrutura do seu dente.",
   },
 ];
 
@@ -83,12 +109,20 @@ const faqs = [
     a: "O procedimento é confortável e, na maioria dos casos, dispensa anestesia profunda. Você é acompanhado de perto em cada etapa.",
   },
   {
+    q: "Qual a diferença entre lente e faceta?",
+    a: "As lentes de contato dental são mais finas e exigem menos preparo do dente. Na sua avaliação, o Dr. Márcio indica o que faz mais sentido para o seu caso.",
+  },
+  {
     q: "Quanto tempo demora para ficar pronto?",
     a: "Depende do caso, mas a maioria das transformações é concluída em poucas sessões. Tudo é definido na sua avaliação.",
   },
   {
     q: "As lentes duram quanto tempo?",
     a: "Com os cuidados corretos, as lentes de porcelana têm grande durabilidade e mantêm o brilho por muitos anos.",
+  },
+  {
+    q: "Como funciona o pagamento?",
+    a: "Na avaliação apresentamos o plano de tratamento e as condições de pagamento de forma transparente, sem compromisso.",
   },
 ];
 
@@ -154,24 +188,12 @@ const Lentes = () => {
               Lentes de Contato Dental • São Paulo
             </p>
             <h1 className="font-kiona text-3xl font-bold leading-[1.1] tracking-tight sm:text-4xl lg:text-5xl">
-              O sorriso que você sempre quis,{" "}
-              <span className="text-accent">em poucas sessões</span>
+              Volte a sorrir <span className="text-accent">sem pensar duas vezes</span>
             </h1>
             <p className="mx-auto max-w-xl font-inter text-base text-foreground/80 lg:mx-0">
-              Lentes de porcelana sob medida, planejadas digitalmente para um resultado
-              natural — feitas por um especialista em reabilitação oral.
+              Lentes de porcelana sob medida que devolvem a naturalidade — e a confiança —
+              do seu sorriso. Planejadas digitalmente por um especialista em reabilitação oral.
             </p>
-
-            <div className="flex items-center justify-center gap-2 lg:justify-start">
-              <div className="flex">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                ))}
-              </div>
-              <span className="text-xs text-muted-foreground">
-                Centenas de sorrisos transformados
-              </span>
-            </div>
 
             <div className="flex flex-col items-center gap-2 lg:items-start">
               <CTA label="Quero avaliar meu sorriso" className="w-full sm:w-auto" />
@@ -216,59 +238,102 @@ const Lentes = () => {
         </div>
       </section>
 
-      {/* TRANSFORMAÇÕES — prova central */}
+      {/* COMO FUNCIONA — processo */}
       <section className="container mx-auto px-4 py-16 sm:px-6">
         <div className="mx-auto max-w-2xl text-center">
-          <p className="text-xs uppercase tracking-[0.25em] text-accent">Resultados reais</p>
+          <p className="text-xs uppercase tracking-[0.25em] text-accent">Passo a passo</p>
           <h2 className="mt-2 font-kiona text-2xl font-bold sm:text-3xl">
-            Transformações feitas pelo Dr. Márcio
+            Como funciona o seu tratamento
           </h2>
           <p className="mt-3 font-inter text-sm text-foreground/70">
-            Casos reais de pacientes. Veja o antes e o depois.
+            Um processo transparente e acolhedor, do primeiro contato ao novo sorriso.
           </p>
         </div>
 
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {cases.map((c) => (
+          {steps.map((s, i) => (
             <div
-              key={c.src}
-              className="group overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]"
+              key={s.title}
+              className="relative rounded-2xl border border-white/10 bg-white/[0.03] p-6"
             >
-              <img
-                src={c.src}
-                alt={c.alt}
-                loading="lazy"
-                className="aspect-square w-full object-cover transition-transform duration-500 group-hover:scale-105"
-              />
+              <span className="font-kiona text-3xl font-bold text-accent/30">0{i + 1}</span>
+              <s.icon className="mt-2 h-7 w-7 text-accent" />
+              <h3 className="mt-3 font-kiona text-base font-bold">{s.title}</h3>
+              <p className="mt-2 font-inter text-sm leading-relaxed text-foreground/70">{s.text}</p>
             </div>
           ))}
         </div>
-
-        <div className="mt-10 text-center">
-          <CTA label="Quero um resultado assim" />
-        </div>
       </section>
 
-      {/* POR QUE COM O DR. MÁRCIO */}
+      {/* TRANSFORMAÇÕES — prova central */}
       <section className="bg-white/[0.02] py-16">
         <div className="container mx-auto px-4 sm:px-6">
           <div className="mx-auto max-w-2xl text-center">
-            <p className="text-xs uppercase tracking-[0.25em] text-accent">Diferenciais</p>
+            <p className="text-xs uppercase tracking-[0.25em] text-accent">Resultados reais</p>
             <h2 className="mt-2 font-kiona text-2xl font-bold sm:text-3xl">
-              Por que tratar com o Dr. Márcio
+              Transformações feitas pelo Dr. Márcio
             </h2>
+            <p className="mt-3 font-inter text-sm text-foreground/70">
+              Casos reais de pacientes. Veja o antes e o depois.
+            </p>
           </div>
+
           <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {reasons.map((r) => (
+            {cases.map((c) => (
               <div
-                key={r.title}
-                className="rounded-2xl border border-white/10 bg-white/[0.03] p-6 text-center"
+                key={c.src}
+                className="group overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]"
               >
-                <r.icon className="mx-auto h-8 w-8 text-accent" />
-                <h3 className="mt-4 font-kiona text-base font-bold">{r.title}</h3>
-                <p className="mt-2 font-inter text-sm leading-relaxed text-foreground/70">{r.text}</p>
+                <img
+                  src={c.src}
+                  alt={c.alt}
+                  loading="lazy"
+                  className="aspect-square w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
               </div>
             ))}
+          </div>
+
+          <div className="mt-10 text-center">
+            <CTA label="Quero um resultado assim" />
+          </div>
+        </div>
+      </section>
+
+      {/* DIFERENCIAIS */}
+      <section className="container mx-auto px-4 py-16 sm:px-6">
+        <div className="mx-auto max-w-2xl text-center">
+          <p className="text-xs uppercase tracking-[0.25em] text-accent">Diferenciais</p>
+          <h2 className="mt-2 font-kiona text-2xl font-bold sm:text-3xl">
+            Por que tratar com o Dr. Márcio
+          </h2>
+        </div>
+        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {reasons.map((r) => (
+            <div
+              key={r.title}
+              className="rounded-2xl border border-white/10 bg-white/[0.03] p-6 text-center"
+            >
+              <r.icon className="mx-auto h-8 w-8 text-accent" />
+              <h3 className="mt-4 font-kiona text-base font-bold">{r.title}</h3>
+              <p className="mt-2 font-inter text-sm leading-relaxed text-foreground/70">{r.text}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* CTA INTERMEDIÁRIO */}
+      <section className="bg-white/[0.02] py-14">
+        <div className="container mx-auto max-w-2xl px-4 text-center sm:px-6">
+          <h2 className="font-kiona text-xl font-bold sm:text-2xl">
+            Cada sorriso é único e precisa ser avaliado individualmente
+          </h2>
+          <p className="mt-3 font-inter text-sm text-foreground/70">
+            Tem dúvida se as lentes são indicadas para o seu caso? Fale com a gente — explicamos
+            tudo, sem compromisso.
+          </p>
+          <div className="mt-6 flex justify-center">
+            <CTA label="Conversar no WhatsApp" />
           </div>
         </div>
       </section>
@@ -346,6 +411,19 @@ const Lentes = () => {
         <p className="mt-1 text-[11px] text-muted-foreground">
           Prótese Dentária e Reabilitação Oral • CROSP 116495 • Perdizes, São Paulo
         </p>
+        <a
+          href="https://sp3company.com/assessoria-clinica"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Site Desenvolvido Por SP3"
+          className="mt-5 inline-block transition-opacity hover:opacity-80"
+        >
+          <img
+            src={new URL("../assets/sp3-logo-new.webp", import.meta.url).href}
+            alt="Site Desenvolvido Por SP3"
+            className="mx-auto h-10 w-auto"
+          />
+        </a>
       </footer>
       {/* O botão flutuante de WhatsApp (com popup) é global, renderizado pelo App */}
     </div>
