@@ -64,7 +64,7 @@ function addSemanticMarkers(content: string): string {
   const medicalTerms = [
     'ortodontia', 'ortognática', 'implante', 'lente de contato dental',
     'clareamento', 'periodontia', 'endodontia', 'prótese', 'faceta',
-    'harmonização facial', 'bichectomia', 'botox', 'preenchimento'
+    'harmonização facial', 'bichectomia', 'toxina botulínica', 'preenchimento'
   ];
 
   medicalTerms.forEach(term => {
